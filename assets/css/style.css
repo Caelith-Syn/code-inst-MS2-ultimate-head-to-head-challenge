@@ -1,0 +1,60 @@
+body {
+	background-color: black;
+	background-image: url(../images/brick-wall-background.jpg);
+}
+
+#play-button {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+#begin-game {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: orange;
+}
+
+#selections {
+	margin-left: 12.5%;
+	background-color: yellow;
+}
+
+#rock-selector {
+	display: inline-block;
+	background-color: blue;
+}
+
+#paper-selector {
+	display: inline-block;
+	background-color: green;
+}
+
+#scissors-selector {
+	display: inline-block;
+	background-color: purple;
+}
+
+#rock-image {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#paper-image {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#scissors-image {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#score-update {
+	background-color: cyan;
+}
+
+.score-content {
+	color: yellow;
+}
