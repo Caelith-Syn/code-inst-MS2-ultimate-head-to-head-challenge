@@ -1,39 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	background-color: black;
 	background-image: url(../images/brick-wall-background.jpg);
-}
-
-#play-button {
-	width: 50%;
-	margin-left: 25%;
-	margin-right: 25%;
 }
 
 #begin-game {
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
-	background-color: orange;
+	/*background-color: orange;*/
+}
+
+#begin-button {
+    background-color: transparent;
+    border: none;
+    width: 60%;
+    margin-left: 20%;
+}
+
+#play-iamge {
+	width: 100%;
 }
 
 #selections {
-	margin-left: 12.5%;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 #rock-selector {
 	display: inline-block;
-	background-color: blue;
+    background-color: transparent;
+    border: none;
+	/*background-color: blue;*/
 }
 
 #paper-selector {
 	display: inline-block;
-	background-color: green;
+    background-color: transparent;
+    border: none;
+	/*background-color: green;*/
 }
 
 #scissors-selector {
 	display: inline-block;
-	background-color: purple;
+    background-color: transparent;
+    border: none;
+	/*background-color: purple;*/
 }
 
 #rock-image {
@@ -52,7 +67,7 @@ body {
 }
 
 #score-update {
-	background-color: cyan;
+	background-color: magenta;
 }
 
 .score-content {

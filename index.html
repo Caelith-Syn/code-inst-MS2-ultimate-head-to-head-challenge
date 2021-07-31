@@ -8,27 +8,27 @@
 <body>
 
 <div id="begin-game">
-	<!-- <button id="begin-game"> -->
-		<img id="play-button" src="assets/images/play-button-clear.png">
-	<!-- </button> -->
+	<button id="begin-button">
+		<a href="#"><img id="play-iamge" src="assets/images/play-button-clear.png"></a>
+	</button>
 </div>
 
 <div id="selections">
-	<div id="rock-selector">
-		<img id="rock-image" src="assets/images/rock-button-clear.png">
-	</div>
-	<div id="paper-selector">
-		<img id="rock-image" src="assets/images/paper-button-clear.png">
-	</div>
-	<div id="scissors-selector">
-		<img id="rock-image" src="assets/images/scissors-button-clear.png">
-	</div>
+	<button id="rock-selector">
+		<a href="#"><img id="rock-image" src="assets/images/rock-button-clear.png"></a>
+	</button>
+	<button id="paper-selector">
+		<a href="#"><img id="rock-image" src="assets/images/paper-button-clear.png"></a>
+	</button>
+	<button id="scissors-selector">
+		<a href="#"><img id="rock-image" src="assets/images/scissors-button-clear.png"></a>
+	</button>
 </div>
 
 <div id="score-update">
-	<h3 class="score-content">Player score:</h3><div id="player-score"> 0</div>
-	<h3 class="score-content">Computer score:</h3><div id="computer-score"> 0</div>
+	<h3 class="score-content">Player score:<span id="player-score"> 0</span></h3>
+	<h3 class="score-content">Computer score:<span id="computer-score"> 0</span></h3>
 </div>
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>
