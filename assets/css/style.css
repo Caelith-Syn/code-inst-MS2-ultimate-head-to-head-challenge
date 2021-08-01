@@ -6,6 +6,8 @@
 body {
 	background-color: black;
 	background-image: url(../images/brick-wall-background.jpg);
+    font-family: futura, helvetica, sans serif;
+    color: whitesmoke;
 }
 
 #begin-game {
@@ -71,17 +73,92 @@ body {
 }
 
 .score-content {
-	background-color: magenta;
+	/*background-color: green;*/
 	color: yellow;
 	text-align: center;
 }
 
 .game-instructions {
-	background-color: magenta;
+	/*background-color: blue;*/
 	color: yellow;
 	text-align: center;
 }
-footer {
+
+.headings {
+	/*background-color: green;*/
+	color: yellow;
+	text-align: center;
+}
+
+ul {
+	margin-left: 1%;
+}
+
+#game-rules {
+	width: 8.5%;
+	margin-left: 46%;
+	text-align: left;
+	/*background-color: purple;*/
+}
+
+.rock-icon {
+	height: 190px;
+	width: 30%;
+	margin-left: 4.5%;
+	background-color: blue;
+	display: inline-block;
+	position: relative;
+}
+
+.paper-icon {
+	height: 190px;
+	width: 30%;
+	background-color: yellow;
+	display: inline-block;
+}
+
+.scissors-icon {
+	height: 190px;
+	width: 30%;
+	background-color: green;
+	display: inline-block;
+}
+
+#icon-wrapper {
 	background-color: purple;
+	width: 60%;
+	margin-left: 20%;
+}
+
+#social-media-icon-set {
+	/*background-color: yellow;*/
+	height: 100%;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#social-icons {
+	height: 80%;
+	float: left;
+	margin-top: 5px;
+	margin-left: 1%;
+}
+
+footer {
+	/*background-color: purple;*/
+	margin-bottom: 0;
 	height: 50px;
+	width: 100%;
+	position: fixed;
+    bottom: 0;
+}
+
+.footer-links {
+	display: inline-block;
+	float: left;
+}
+
+a {
+	color: white;
+	text-decoration: none;
 }
