@@ -102,7 +102,7 @@ ul {
 }
 
 .rock-icon {
-	height: 190px;
+	/*height: 190px;*/
 	width: 30%;
 	margin-left: 4.5%;
 	background-color: blue;
@@ -111,14 +111,14 @@ ul {
 }
 
 .paper-icon {
-	height: 190px;
+	/*height: 190px;*/
 	width: 30%;
 	background-color: yellow;
 	display: inline-block;
 }
 
 .scissors-icon {
-	height: 190px;
+	/*height: 190px;*/
 	width: 30%;
 	background-color: green;
 	display: inline-block;
