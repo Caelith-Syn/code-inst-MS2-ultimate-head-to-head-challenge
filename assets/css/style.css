@@ -71,5 +71,17 @@ body {
 }
 
 .score-content {
+	background-color: magenta;
 	color: yellow;
+	text-align: center;
+}
+
+.game-instructions {
+	background-color: magenta;
+	color: yellow;
+	text-align: center;
+}
+footer {
+	background-color: purple;
+	height: 50px;
 }
