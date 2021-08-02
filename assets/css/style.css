@@ -103,29 +103,29 @@ ul {
 
 .rock-icon {
 	/*height: 190px;*/
-	width: 30%;
-	margin-left: 4.5%;
-	background-color: blue;
+	width: 33%;
+	/*margin-left: 4.5%;*/
+	/*background-color: blue;*/
 	display: inline-block;
 	position: relative;
 }
 
 .paper-icon {
 	/*height: 190px;*/
-	width: 30%;
-	background-color: yellow;
+	width: 33%;
+	/*background-color: yellow;*/
 	display: inline-block;
 }
 
 .scissors-icon {
 	/*height: 190px;*/
-	width: 30%;
-	background-color: green;
+	width: 33%;
+	/*background-color: green;*/
 	display: inline-block;
 }
 
 #icon-wrapper {
-	background-color: purple;
+	/*background-color: purple;*/
 	width: 60%;
 	margin-left: 20%;
 }
