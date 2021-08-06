@@ -211,12 +211,12 @@ a {
 	padding: 5%;
 }
 
-/*#player-score {
-	color: white;
+#player-score {
+	color: yellow;
 }
 
 #computer-score {
-	color: white;
+	color: yellow;
 }
 
 .score-timer {
@@ -224,7 +224,7 @@ a {
 	color: yellow;
 	text-align: center;
 	font-size: 200%;
-}*/
+}
 
 #choosen-icon-wrapper {
 	background-color: purple;
