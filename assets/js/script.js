@@ -8,14 +8,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 	function loadGame () {
-
+		let getElementById('rock-image', 'paper-image', 'scissors-image' function(startTimer)) {
+			if ('rock-image' === 'click') display playerSelection function(checkResult) {
+				if ('playerSelection' === 'cpuSelection'){
+					console.log('draw'){
+						if else {console.log('win')}
+					}
+				}
+			}
+		}
 	}
 	
 
-	function makeSelection () {
+	function playerSelection () {
 
 	}
 
+
+	function cpuSelection () {
+
+	}
 
 	function startTimer () {
 
