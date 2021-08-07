@@ -8,33 +8,38 @@
 <body>
 
 	<nav id="navigation-bar">
-		<div id="contact-us-link">
-			<a href="index.html" class="nav-links">Contact Us</a>
+		<div id="play-game-link">
+			<a href="game.html" class="active-link">Play Game</a>
 		</div>
 		
 		<div id="game-rules-link">
-			<a href="game-rules.html" class="nav-links">Game Rules</a>
+			<a href="game-rules.html" class="nav-link">Game Rules</a>
 		</div>
 
 		<div id="home-link">
-			<a href="index.html" class="nav-links">Home</a>
+			<a href="index.html" class="nav-link">Home</a>
 		</div>
 	</nav>
 
 	<div>
-		<h1 class="game-page-heading">Make a selection</h1>
+		<h1 class="game-page-heading">Make a selection to begin !</h1>
 	</div>
 
 	<div id="choosen-icon-wrapper-player">
-			<div class="blank-choosen-icon-player"></div>
-			<img src="assets/images/rock-symbol.png" class="rock-choosen-icon-player">
-<!-- 			<img src="assets/images/paper-symbol.png" class="paper-choosen-icon-player">
-			<img src="assets/images/scissors-symbol.png" class="scissors-choosen-icon-player"> -->
+			<div id="rockChoosenIconPlayer">
+				<img src="assets/images/rock-symbol.png" class="rock-choosen-icon-player">
+			</div>
+			<div id="paperChoosenIconPlayer">
+				<img src="assets/images/paper-symbol.png" class="paper-choosen-icon-player">
+			</div>
+			<div id="scissorsChoosenIconPlayer">
+				<img src="assets/images/scissors-symbol.png" class="scissors-choosen-icon-player">
+			</div>
 	</div>
 
 	<div id="selections">
 		<div id="rock-image-div">
-			<a href="#"><img id="rock-image" src="assets/images/rock-button-clear.png"></a>
+			<a href="#" onclick="checkResult()"><img id="rock-image" src="assets/images/rock-button-clear.png"></a>
 		</div>
 		<div id="paper-image-div">
 			<a href="#"><img id="paper-image" src="assets/images/paper-button-clear.png"></a>
@@ -45,24 +50,27 @@
 	</div>
 
 	<div id="choosen-icon-wrapper-cpu">
-			<div class="blank-choosen-icon-cpu"></div>
-			<!-- <img src="assets/images/rock-symbol.png" class="rock-choosen-icon-cpu">
-			<img src="assets/images/paper-symbol.png" class="paper-choosen-icon-cpu"> -->
-			<img src="assets/images/scissors-symbol.png" class="scissors-choosen-icon-cpu">
+			<div id="rockChoosenIconCpu">
+				<img src="assets/images/rock-symbol.png" class="rock-choosen-icon-cpu">
+			</div>
+			<div id="paperChoosenIconCpu">
+				<img src="assets/images/paper-symbol.png" class="paper-choosen-icon-cpu">
+			</div>
+			<div id="scissorsChoosenIconCpu">
+				<img src="assets/images/scissors-symbol.png" class="scissors-choosen-icon-cpu">
+			</div>
 	</div>
 
 	<div>
 			<h1 class="headings">Scores</h1>
-				<p class="game-instructions">Player score: <span id="player-score">0</span> - <span>Computer score: <span id="computer-score">0</span></span></p>
+				<p class="game-scores">Player score: <span id="player-score">0</span> - <span>Computer score: <span id="computer-score">0</span></span></p>
 			<br><h1 class="headings">Timer</h1>
-				<p class="game-instructions">0:60</p>
+				<p class="game-scores">0:60</p>
 	</div>
 
 
 
 	<footer>
-<!-- 			<p><a href="index.html" class="footer-links">Game rules</a></p>
-			<p><a href="index.html" class="footer-links">Back to home</a></p> -->
 		<div id="social-media-icon-set">
 			<a href="https://www.facebook.com/" target="_blank" rel="noopener">
 				<img src="assets/images/social-media-icon-facebook.svg" alt="Link to Ultimate Challenge Facebook page" id="social-icons"></a>

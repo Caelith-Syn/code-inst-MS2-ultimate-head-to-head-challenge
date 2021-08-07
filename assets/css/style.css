@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body {
@@ -17,6 +18,12 @@ a {
 	color: white;
 	text-decoration: none;
     font-family: futura, helvetica, sans serif;
+}
+
+button {
+	background-color: green;
+	width: 100px;
+	height: 50px;
 }
 
 
@@ -39,9 +46,19 @@ a {
 	top: 0;
 }
 
-.nav-links {
+.nav-link {
 	display: inline-block;
 	color: yellow;
+	font-size: 150%;
+	text-align: center;
+	float: right;
+	margin-right: 20%;
+	/*background-color: purple;*/
+}
+
+.active-link {
+	display: inline-block;
+	color: white;
 	font-size: 150%;
 	text-align: center;
 	float: right;
@@ -65,7 +82,7 @@ a {
 	float: right;
 }
 
-#contact-us-link {
+#play-game-link {
 	width: 12.6%;
 	display: inline-block;
 	/*background-color: green;*/
@@ -136,7 +153,7 @@ a {
 .game-instructions {
 	/*background-color: blue;*/
 	text-align: center;
-	font-size: 125%;
+	font-size: 100%;
 }
 
 #home-instructions {
@@ -179,6 +196,20 @@ a {
 	margin-top: 2.5%;
 	margin-bottom: 2.5%;
 }
+
+.bold-rock-text {
+	color: yellow;
+}
+
+.bold-paper-text {
+	color: cyan;
+}
+
+.bold-scissors-text {
+	color: deeppink;
+}
+
+
 
 
 
@@ -253,6 +284,12 @@ a {
 	color: yellow;
 }
 
+.game-scores {
+	/*background-color: blue;*/
+	text-align: center;
+	font-size: 200%;
+}
+
 .score-timer {
 	background-color: green;
 	color: yellow;
@@ -263,27 +300,22 @@ a {
 #choosen-icon-wrapper-player {
 	/*background-color: purple;*/
 	display: inline-block;
-	width: 24.5%;
+	width: 24%;
+	margin-left: .5%;
 }
 
 #choosen-icon-wrapper-cpu {
 	/*background-color: purple;*/
 	display: inline-block;
-	width: 24.5%;
-}
-
-.blank-choosen-icon-player {
-	width: 75%;
-	margin-left: 25%;
-	display: inline-block;
-	float: left;
+	width: 24%;
 }
 
 .rock-choosen-icon-player {
 	width: 75%;
 	margin-left: 25%;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: left;
+	display: none;
 }
 
 .paper-choosen-icon-player {
@@ -291,6 +323,7 @@ a {
 	margin-left: 25%;
 	display: inline-block;
 	float: left;
+	display: none;
 }
 
 .scissors-choosen-icon-player {
@@ -298,13 +331,7 @@ a {
 	margin-left: 25%;
 	display: inline-block;
 	float: left;
-}
-
-.blank-choosen-icon-cpu {
-	width: 75%;
-	margin-right: 25%;
-	display: inline-block;
-	float: left;
+	display: none;
 }
 
 .rock-choosen-icon-cpu {
@@ -312,6 +339,7 @@ a {
 	margin-right: 25%;
 	display: inline-block;
 	float: left;
+	display: none;
 }
 
 .paper-choosen-icon-cpu {
@@ -319,6 +347,7 @@ a {
 	margin-right: 25%;
 	display: inline-block;
 	float: left;
+	display: none;
 }
 
 .scissors-choosen-icon-cpu {
@@ -326,6 +355,7 @@ a {
 	margin-right: 25%;
 	display: inline-block;
 	float: left;
+	display: none;
 }
 
 

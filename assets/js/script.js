@@ -1,44 +1,68 @@
-document.addEventListener('DOMContentLoaded', function(){
-    console.log('DOM fully loaded');
-    let document.getElementById('play-iamge');
-    for ('play-iamge') addEventListener("click", function() {
-    	loadGame ()
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "submit") {
+				checkAnswer();
+			} else {
+				let gameType = this.getAttribute("data-type");
+				runGame(gameType);
+			}
+        });
     }
+
+    document.getElementById("answer-box").addEventListener("keydown", function(event) {
+    	if (event.key === "Enter") {
+    		checkAnswer();
+    	}
+    })
+
+    runGame("addition");
 });
 
 
-	function loadGame () {
-		let getElementById('rock-image', 'paper-image', 'scissors-image' function(startTimer)) {
-			if ('rock-image' === 'click') display playerSelection function(checkResult) {
-				if ('playerSelection' === 'cpuSelection'){
-					console.log('draw'){
-						if else {console.log('win')}
-					}
-				}
-			}
-		}
-	}
+
+	// function loadGame () {
+
+	// }
 	
 
-	function playerSelection () {
-
-	}
-
-
-	function cpuSelection () {
-
-	}
-
-	function startTimer () {
-
-	}
+	// function cpuSelection () {
+	// 	let choosenIconCpu = Math.random() *2;
+	// 	if (cpuSelection === 0) {
+	// 		return 'rockChoosenIconCpu'
+	// 	} if (cpuSelection === 1) {
+	// 		return 'paperChoosenIconCpu'
+	// 	} if (cpuSelection === 2) {
+	// 		return 'scissorsChoosenIconCpu'
+	// 	} else {return 'waiting for selection'}
+	// }
 
 
-	function checkResult () {
+	// function startTimer () {
 
-	}
+	// }
+
+
+
+// function checkResult(){
+//     var div1 = document.getElementById('rockChoosenIconPlayer');
+//     if (div1.style.display === 'none') {
+//         div1.style.display = 'block'
+//     } else {
+//         div1.style.display = 'none'
+//     }
+// }
+
+// function checkResult() { 
+// 	document.getElementById('rockChoosenIconPlayer').setAttribute('none', 'display:block'); 
+// }
+
+	function checkResult() {
+alert('This is working!')
+}
 
 	
-	function updateScore () {
+	// function updateScore () {
 
-	}
+	// }
