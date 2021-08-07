@@ -44,6 +44,9 @@ a {
 	color: yellow;
 	font-size: 150%;
 	text-align: center;
+	float: right;
+	margin-right: 20%;
+	/*background-color: purple;*/
 }
 
 #home-link {
@@ -51,7 +54,7 @@ a {
 	display: inline-block;
 	/*background-color: red;*/
 	margin-top: 1.9%;
-	margin-left: 2%;
+	float: right;
 }
 
 #game-rules-link {
@@ -59,13 +62,16 @@ a {
 	display: inline-block;
 	/*background-color: blue;*/
 	margin-top: 1.9%;
+	float: right;
 }
 
 #contact-us-link {
-	width: 15%;
+	width: 12.6%;
 	display: inline-block;
 	/*background-color: green;*/
 	margin-top: 1.9%;
+	margin-right: 5%;
+	float: right;
 }
 
 #begin-button {
@@ -92,12 +98,7 @@ a {
 	/*background-color: green;*/
 }
 
-/*#icon-wrapper {
-	background-color: purple;
-}*/
-
 .rock-icon {
-	/*height: 190px;*/
 	width: 15%;
 	margin-left: 27%;
 	/*background-color: blue;*/
@@ -198,11 +199,7 @@ a {
 #selections {
 	/*background-color: yellow;*/
 	width: 50%;
-	/*height: 15%;*/
-	/*margin-left: 25%;*/
 	display: inline-block;
-/*	padding-bottom: 2%;
-	padding-top: 2%;*/
 }
 
 #rock-image-div {
@@ -270,63 +267,63 @@ a {
 }
 
 #choosen-icon-wrapper-cpu {
-	/*background-color: green;*/
+	/*background-color: purple;*/
 	display: inline-block;
 	width: 24.5%;
 }
 
 .blank-choosen-icon-player {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-left: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .rock-choosen-icon-player {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-left: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .paper-choosen-icon-player {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-left: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .scissors-choosen-icon-player {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-left: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .blank-choosen-icon-cpu {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-right: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .rock-choosen-icon-cpu {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-right: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .paper-choosen-icon-cpu {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-right: 25%;
 	display: inline-block;
 	float: left;
 }
 
 .scissors-choosen-icon-cpu {
 	width: 75%;
-	margin-left: 12.5%;
+	margin-right: 25%;
 	display: inline-block;
 	float: left;
 }
