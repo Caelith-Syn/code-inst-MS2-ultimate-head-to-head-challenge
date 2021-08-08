@@ -25,27 +25,33 @@
 		<h1 class="game-page-heading">Make a selection to begin !</h1>
 	</div>
 
+	<div id="play-iamge-container">
+		<div id="play-iamge-div">
+			<a href="#" onclick="startTimer()"><img id="play-iamge" src="assets/images/play-button-clear.png"></a>
+		</div>
+	</div>
+
 	<div id="choosen-icon-wrapper-player">
-			<div id="rockChoosenIconPlayer">
-				<img src="assets/images/rock-symbol.png" class="rock-choosen-icon-player">
+			<div>
+				<img src="assets/images/rock-symbol.png"  id="rockChoosenIconPlayer" class="rock-choosen-icon-player">
 			</div>
-			<div id="paperChoosenIconPlayer">
-				<img src="assets/images/paper-symbol.png" class="paper-choosen-icon-player">
+			<div>
+				<img src="assets/images/paper-symbol.png" id="paperChoosenIconPlayer" class="paper-choosen-icon-player">
 			</div>
-			<div id="scissorsChoosenIconPlayer">
-				<img src="assets/images/scissors-symbol.png" class="scissors-choosen-icon-player">
+			<div>
+				<img src="assets/images/scissors-symbol.png" id="scissorsChoosenIconPlayer" class="scissors-choosen-icon-player">
 			</div>
 	</div>
 
 	<div id="selections">
 		<div id="rock-image-div">
-			<a href="#" onclick="checkResult()"><img id="rock-image" src="assets/images/rock-button-clear.png"></a>
+			<a href="#"  onclick="showPlayerChoiceRock()"><img id="rock-image" src="assets/images/rock-button-clear.png"></a>
 		</div>
 		<div id="paper-image-div">
-			<a href="#"><img id="paper-image" src="assets/images/paper-button-clear.png"></a>
+			<a href="#" onclick="showPlayerChoicePaper()"><img id="paper-image" src="assets/images/paper-button-clear.png"></a>
 		</div>
 		<div id="scissors-image-div">
-			<a href="#"><img id="scissors-image" src="assets/images/scissors-button-clear.png"></a>
+			<a href="#" onclick="showPlayerChoiceScissors()"><img id="scissors-image" src="assets/images/scissors-button-clear.png"></a>
 		</div>
 	</div>
 
@@ -64,8 +70,9 @@
 	<div>
 			<h1 class="headings">Scores</h1>
 				<p class="game-scores">Player score: <span id="player-score">0</span> - <span>Computer score: <span id="computer-score">0</span></span></p>
-			<br><h1 class="headings">Timer</h1>
-				<p class="game-scores">0:60</p>
+			<br><h1 class="headings">Time Remaining</h1>
+				<div id="countdown-timer" class="game-scores"></div>
+
 	</div>
 
 

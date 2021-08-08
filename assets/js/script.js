@@ -27,42 +27,71 @@ document.addEventListener("DOMContentLoaded", function() {
 	// }
 	
 
-	// function cpuSelection () {
-	// 	let choosenIconCpu = Math.random() *2;
-	// 	if (cpuSelection === 0) {
-	// 		return 'rockChoosenIconCpu'
-	// 	} if (cpuSelection === 1) {
-	// 		return 'paperChoosenIconCpu'
-	// 	} if (cpuSelection === 2) {
-	// 		return 'scissorsChoosenIconCpu'
-	// 	} else {return 'waiting for selection'}
-	// }
+	function cpuSelection () {
+		let choosenIconCpu = Math.random() *2;
+		if (cpuSelection === 0) {
+			return 'rockChoosenIconCpu'
+		} if (cpuSelection === 1) {
+			return 'paperChoosenIconCpu'
+		} if (cpuSelection === 2) {
+			return 'scissorsChoosenIconCpu'
+		} else {return 'waiting for selection'}
+	}
 
 
-	// function startTimer () {
+	function startTimer() {
+	var timeleft = 60;
+	var downloadTimer = setInterval(function(){
+	  if(timeleft <= 0){
+	    clearInterval(downloadTimer);
+	    document.getElementById("countdown-timer").innerHTML = "Times Up";
+	  } else {
+	    document.getElementById("countdown-timer").innerHTML = timeleft;
+	  }
+	  timeleft -= 1;
+	}, 1000);
+	}
 
-	// }
 
 
 
-// function checkResult(){
-//     var div1 = document.getElementById('rockChoosenIconPlayer');
-//     if (div1.style.display === 'none') {
-//         div1.style.display = 'block'
-//     } else {
-//         div1.style.display = 'none'
-//     }
-// }
 
-// function checkResult() { 
-// 	document.getElementById('rockChoosenIconPlayer').setAttribute('none', 'display:block'); 
-// }
 
-	function checkResult() {
-alert('This is working!')
+
+
+
+
+
+
+
+
+	function showPlayerChoiceRock() {
+   	document.getElementById('rockChoosenIconPlayer').style.display = "block";
+	hidePlayerChoicePaper();
+	hidePlayerChoiceScissors();
+	}
+
+	function showPlayerChoicePaper() {
+   	document.getElementById('paperChoosenIconPlayer').style.display = "block";
+	hidePlayerChoiceRock();
+	hidePlayerChoiceScissors();
+	}
+
+	function showPlayerChoiceScissors() {
+   	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
+	hidePlayerChoiceRock();
+	hidePlayerChoicePaper();
+	}
+
+
+function hidePlayerChoiceRock() {
+   document.getElementById('rockChoosenIconPlayer').style.display = "none";
 }
 
-	
-	// function updateScore () {
+function hidePlayerChoicePaper() {
+   document.getElementById('paperChoosenIconPlayer').style.display = "none";
+}
 
-	// }
+function hidePlayerChoiceScissors() {
+   document.getElementById('scissorsChoosenIconPlayer').style.display = "none";
+}

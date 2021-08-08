@@ -153,7 +153,7 @@ button {
 .game-instructions {
 	/*background-color: blue;*/
 	text-align: center;
-	font-size: 100%;
+	font-size: 125%;
 }
 
 #home-instructions {
@@ -313,7 +313,7 @@ button {
 .rock-choosen-icon-player {
 	width: 75%;
 	margin-left: 25%;
-	/*display: inline-block;*/
+	display: inline-block;
 	float: left;
 	display: none;
 }
