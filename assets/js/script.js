@@ -205,11 +205,11 @@ function showCpuChoiceScissors() {
 /** This code generates a random selcetion for the computer to display * */
 function cpuSelection() {
     let cpuChoice = Math.floor(Math.random()*3);
-    if (cpuChoice === 1) {
+    if (cpuChoice === 0) {
     return showCpuChoiceRock();
-    } else if (cpuChoice === 2) {
+    } else if (cpuChoice === 1) {
    	return showCpuChoicePaper();
-    } else if (cpuChoice === 3) {
+    } else if (cpuChoice === 2) {
     return  showCpuChoiceScissors();
     } else {
     return "Make a selection to begin the game";
