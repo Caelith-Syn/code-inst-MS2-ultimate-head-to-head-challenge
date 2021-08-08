@@ -46,6 +46,12 @@ button {
 	top: 0;
 }
 
+#logo {
+	height: 100px;
+	float: left;
+	margin-left: 8%;
+}
+
 .nav-link {
 	display: inline-block;
 	color: yellow;
@@ -96,21 +102,21 @@ button {
     border: none;
 }
 
-#play-immge-container {
+#play-image-container {
 	width: 40%;
 	height: 10%;
 	margin-left: 30%;
 	/*background-color: green;*/
 }
 
-#play-iamge-div {
+#play-image-div {
 	width: 50%;
 	margin-left: 25%;
 	/*background-color: blue;*/
 	display: inline-block;
 }
 
-#play-iamge {
+#play-image {
 	width: 100%;
 	/*background-color: green;*/
 }
@@ -244,7 +250,12 @@ button {
 }
 
 #begin-image {
-	margin-left: 3%;
+	width: 40%;
+	margin-left: 10%;
+}
+
+#reset-image {
+	width: 40%;
 }
 
 #selections {
