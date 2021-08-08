@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     	if (event.key === "Enter") {
     		checkAnswer();
     	}
-    })
+    });
 
     runGame("addition");
 });
@@ -25,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-function loadGame () {
 
+
+function loadGame (gameType) {
 }
 
 
@@ -34,6 +35,9 @@ function loadGame () {
 
 
 
+
+
+/** This code begins the countdown timer when "Play" is clicked * */
 function startTimer() {
 	var timeleft = 30;
 	var downloadTimer = setInterval(function(){
@@ -51,22 +55,123 @@ function startTimer() {
 
 
 
-/** This code compares the players selection and the computers selection * */
-function checkAnswer() {let userChoice = document.getElementById("rockChoosenIconPlayer");
-    let calculatedAnswer = calculateCorrectAnswer();
-    let isCorrect = userAnswer === calculatedAnswer[0];
-    if ('userChoice' === 'cpuChoice') {
-	alert("It's a draw.");
-	incrementPlayerScore();
-    } else if ('userChoice' !== 'cpuChoice') {
-   	alert("You Won!");
-   	incrementPlayerScore();
-    } else {
-   	alert(`Awwww.... you lost`);
-   	incrementCpuScore();
+
+
+
+function checkAnswer() {
+	
+	// alert('This is working!')
+
+/** This code targets the display element choices * */
+    let playerRock = document.getElementById("rockChoosenIconPlayer");
+    let playerPaper = document.getElementById("paperChoosenIconPlayer");
+    let playerScissors = document.getElementById("scissorsChoosenIconPlayer");
+    let cpuRock = document.getElementById("rockChoosenIconCpu");
+    let cpuPaper = document.getElementById("paperChoosenIconCpu");
+    let cpuScissors = document.getElementById("scissorsChoosenIconCpu");
+
+
+
+
+
+
+
+
+/** This code creates draw statements * */
+    if (playerRock === cpuRock) {
+      return alert("It's a draw.");
+    } else if (playerPaper === cpuPaper) {
+      return alert("It's a draw.");
+    } else if (playerScissors === cpuScissors) {
+      return alert("It's a draw.");
+    } 
+
+
+
+
+
+
+
+
+/** This code creates win statements * */
+    else if (playerRock === cpuScissors) {
+        return alert("You win");
+        incrementPlayerScore ();
+    } else if (playerScissors === cpuPaper) {
+        return alert("You win");
+        incrementPlayerScore ();
+    } else if (playerPaper === cpuRock) {
+        return alert("You win");
+        incrementPlayerScore ();
     }
 
+
+
+
+
+
+
+
+/** This code creates lose statements * */
+    else if (playerScissors === cpuRock) {
+        return alert("You lose");
+        incrementCpuScore ();
+    } else if (playerPaper === cpuScissors) {
+        return alert("You lose");
+        incrementCpuScore ();
+   	} else if (playerRock === cpuPaper) {
+        return alert("You lose");
+        incrementCpuScore ();
+   	} 
+
+
+
+
+
+
+
+
+/** This code creates a warning message if something dose not work * */
+   	// else {
+    //     return alert(`Something is broken`);
+    // }
+
 }
+
+
+
+
+
+
+
+
+// function checkResult() {
+// 	alert('This is working!')
+// }
+
+
+
+
+
+
+
+
+function incrementPlayerScore () {
+
+/** This code will add 1 point to the players score each time the player wins a round * */
+	let playerOldScore = parseInt(document.getElementById('player-score').innerText);
+	document.getElementById('player-score').innerText = ++playerOldScore;
+
+}
+
+function incrementCpuScore () {
+
+/** This code will add 1 point to the computers score each time the computer wins a round * */
+	let cpuOldScore = parseInt(document.getElementById('computer-score').innerText);
+	document.getElementById('computer-score').innerText = ++cpuOldScore;
+
+}
+
 
 
 
@@ -101,11 +206,11 @@ function showCpuChoiceScissors() {
 function cpuSelection() {
     let cpuChoice = Math.floor(Math.random()*3);
     if (cpuChoice === 1) {
-    return showCpuChoiceRock()
+    return showCpuChoiceRock();
     } else if (cpuChoice === 2) {
-   	return showCpuChoicePaper()
+   	return showCpuChoicePaper();
     } else if (cpuChoice === 3) {
-    return  showCpuChoiceScissors()
+    return  showCpuChoiceScissors();
     } else {
     return "Make a selection to begin the game";
     }
@@ -121,6 +226,7 @@ function showPlayerChoiceRock() {
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
 	cpuSelection();
+	checkAnswer();
 	}
 
 function showPlayerChoicePaper() {
@@ -128,6 +234,7 @@ function showPlayerChoicePaper() {
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
 	cpuSelection();
+	checkAnswer();
 } 
 
 function showPlayerChoiceScissors() {
@@ -135,6 +242,7 @@ function showPlayerChoiceScissors() {
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
 	cpuSelection ();
+	checkAnswer();
 }
 
 
@@ -172,28 +280,6 @@ function hideCpuChoicePaper() {
 function hideCpuChoiceScissors() {
    document.getElementById('scissorsChoosenIconCpu').style.display = "none";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/** This code compares the players selection and the computers selection * */
-if (string1 === cpuSelection()) {
-  console.log("Matching strings!");
-}
-else {
-  console.log("Strings do not match");
-
-
-
-
 
 
 

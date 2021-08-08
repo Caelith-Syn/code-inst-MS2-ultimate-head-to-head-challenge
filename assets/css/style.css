@@ -9,7 +9,7 @@ body {
 	background-image: url(../images/brick-wall-background.jpg);
     background-size: 100%, cover;
     background-repeat: no-repeat;
-    background-position: top-center;
+    background-position: top;
     font-family: futura, helvetica, sans serif;
     color: white;
 }
@@ -168,7 +168,7 @@ button {
 	margin-left: 25%;
 }
 
-#social-icons {
+.social-icons {
 	height: 50%;
 	float: left;
 	margin-top: 25px;
