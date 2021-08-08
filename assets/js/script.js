@@ -39,7 +39,7 @@ function loadGame (gameType) {
 
 /** This code begins the countdown timer when "Play" is clicked * */
 function startTimer() {
-	var timeleft = 30;
+	var timeleft = 60;
 	var downloadTimer = setInterval(function(){
 	if(timeleft <= 0){
 	clearInterval(downloadTimer);
@@ -63,12 +63,12 @@ function checkAnswer() {
 	// alert('This is working!')
 
 /** This code targets the display element choices * */
-    let playerRock = document.getElementById("rockChoosenIconPlayer");
-    let playerPaper = document.getElementById("paperChoosenIconPlayer");
-    let playerScissors = document.getElementById("scissorsChoosenIconPlayer");
-    let cpuRock = document.getElementById("rockChoosenIconCpu");
-    let cpuPaper = document.getElementById("paperChoosenIconCpu");
-    let cpuScissors = document.getElementById("scissorsChoosenIconCpu");
+    let playerRock = showPlayerChoiceRock();
+    let playerPaper = showPlayerChoicePaper();
+    let playerScissors = showPlayerChoiceScissors();
+    let cpuRock = showCpuChoiceRock();
+    let cpuPaper = showCpuChoicePaper();
+    let cpuScissors = showCpuChoiceScissors();
 
 
 
@@ -78,12 +78,12 @@ function checkAnswer() {
 
 
 /** This code creates draw statements * */
-    if (playerRock === cpuRock) {
-      return alert("It's a draw.");
-    } else if (playerPaper === cpuPaper) {
-      return alert("It's a draw.");
-    } else if (playerScissors === cpuScissors) {
-      return alert("It's a draw.");
+    if ('playerRock' === 'cpuRock') {
+      alert("It's a draw.");
+    } else if ('playerPaper') {
+      alert("It's a draw.");
+    } else if ('playerScissors') {
+      alert("It's a draw.");
     } 
 
 
@@ -94,15 +94,15 @@ function checkAnswer() {
 
 
 /** This code creates win statements * */
-    else if (playerRock === cpuScissors) {
-        return alert("You win");
+    else if ('playerRock') {
         incrementPlayerScore ();
-    } else if (playerScissors === cpuPaper) {
-        return alert("You win");
+        alert("You win");
+    } else if ('playerScissors') {
         incrementPlayerScore ();
-    } else if (playerPaper === cpuRock) {
-        return alert("You win");
+        alert("You win");
+    } else if ('playerPaper') {
         incrementPlayerScore ();
+        alert("You win");
     }
 
 
@@ -113,15 +113,15 @@ function checkAnswer() {
 
 
 /** This code creates lose statements * */
-    else if (playerScissors === cpuRock) {
-        return alert("You lose");
+    else if ('playerScissors') {
         incrementCpuScore ();
-    } else if (playerPaper === cpuScissors) {
-        return alert("You lose");
+        alert("You win");
+    } else if ('playerPaper') {
         incrementCpuScore ();
-   	} else if (playerRock === cpuPaper) {
-        return alert("You lose");
+        alert("You win");
+   	} else if ('playerRock') {
         incrementCpuScore ();
+        alert("You win");
    	} 
 
 
@@ -132,9 +132,9 @@ function checkAnswer() {
 
 
 /** This code creates a warning message if something dose not work * */
-   	// else {
-    //     return alert(`Something is broken`);
-    // }
+   	else {
+        alert(`Something is broken`);
+    }
 
 }
 
@@ -226,7 +226,6 @@ function showPlayerChoiceRock() {
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
 	cpuSelection();
-	checkAnswer();
 	}
 
 function showPlayerChoicePaper() {
@@ -234,7 +233,6 @@ function showPlayerChoicePaper() {
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
 	cpuSelection();
-	checkAnswer();
 } 
 
 function showPlayerChoiceScissors() {
@@ -242,7 +240,6 @@ function showPlayerChoiceScissors() {
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
 	cpuSelection ();
-	checkAnswer();
 }
 
 
