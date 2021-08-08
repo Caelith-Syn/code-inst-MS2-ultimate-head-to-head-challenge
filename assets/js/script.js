@@ -176,6 +176,25 @@ function incrementCpuScore () {
 
 
 
+/** This code generates a random selcetion for the computer to display * */
+function cpuSelection() {
+    let cpuChoice = Math.floor(Math.random()*6);
+    if (cpuChoice === 0) {
+    return showCpuChoiceRock();
+    } else if (cpuChoice === 1) {
+   	return showCpuChoicePaper();
+    } else if (cpuChoice === 2) {
+    return  showCpuChoiceScissors();
+    } else if (cpuChoice === 3) {
+    return  showCpuChoiceSpoc();
+    } else if (cpuChoice === 4) {
+    return  showCpuChoiceLizard();
+    } else {
+    return "Make a selection to begin the game";
+    }
+}
+
+
 
 
 
@@ -184,36 +203,40 @@ function showCpuChoiceRock() {
    	document.getElementById('rockChoosenIconCpu').style.display = "block";
 	hideCpuChoicePaper();
 	hideCpuChoiceScissors();
+	hideCpuChoiceSpoc();
+	hideCpuChoiceLizard();
 }
 
 function showCpuChoicePaper() {
    	document.getElementById('paperChoosenIconCpu').style.display = "block";
 	hideCpuChoiceRock();
 	hideCpuChoiceScissors();
+	hideCpuChoiceSpoc();
+	hideCpuChoiceLizard();
 }
 
 function showCpuChoiceScissors() {
    	document.getElementById('scissorsChoosenIconCpu').style.display = "block";
 	hideCpuChoiceRock();
 	hideCpuChoicePaper();
+	hideCpuChoiceSpoc();
+	hideCpuChoiceLizard();
 }
 
+function showCpuChoiceSpoc() {
+   	document.getElementById('spocChoosenIconCpu').style.display = "block";
+	hideCpuChoiceRock();
+	hideCpuChoicePaper();
+	hideCpuChoiceScissors();
+	hideCpuChoiceLizard();
+}
 
-
-
-
-/** This code generates a random selcetion for the computer to display * */
-function cpuSelection() {
-    let cpuChoice = Math.floor(Math.random()*3);
-    if (cpuChoice === 0) {
-    return showCpuChoiceRock();
-    } else if (cpuChoice === 1) {
-   	return showCpuChoicePaper();
-    } else if (cpuChoice === 2) {
-    return  showCpuChoiceScissors();
-    } else {
-    return "Make a selection to begin the game";
-    }
+function showCpuChoiceLizard() {
+   	document.getElementById('lizardChoosenIconCpu').style.display = "block";
+	hideCpuChoiceRock();
+	hideCpuChoicePaper();
+	hideCpuChoiceScissors();
+	hideCpuChoiceSpoc();
 }
 
 
@@ -225,6 +248,8 @@ function showPlayerChoiceRock() {
    	document.getElementById('rockChoosenIconPlayer').style.display = "block";
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
+	hidePlayerChoiceSpoc();
+	hidePlayerChoiceLizard();
 	cpuSelection();
 	}
 
@@ -232,6 +257,8 @@ function showPlayerChoicePaper() {
    	document.getElementById('paperChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
+	hidePlayerChoiceSpoc();
+	hidePlayerChoiceLizard();
 	cpuSelection();
 } 
 
@@ -239,6 +266,26 @@ function showPlayerChoiceScissors() {
    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
+	hidePlayerChoiceSpoc();
+	hidePlayerChoiceLizard();
+	cpuSelection ();
+}
+
+function showPlayerChoiceSpoc() {
+   	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
+	hidePlayerChoiceRock();
+	hidePlayerChoicePaper();
+	hidePlayerChoiceScissors();
+	hidePlayerChoiceLizard();
+	cpuSelection ();
+}
+
+function showPlayerChoiceLizard() {
+   	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
+	hidePlayerChoiceRock();
+	hidePlayerChoicePaper();
+	hidePlayerChoiceScissors();
+	hidePlayerChoiceSpoc();
 	cpuSelection ();
 }
 
@@ -260,6 +307,14 @@ function hidePlayerChoiceScissors() {
    document.getElementById('scissorsChoosenIconPlayer').style.display = "none";
 }
 
+function hidePlayerChoiceSpoc() {
+   document.getElementById('spocChoosenIconPlayer').style.display = "none";
+}
+
+function hidePlayerChoiceLizard() {
+   document.getElementById('lizardChoosenIconPlayer').style.display = "none";
+}
+
 
 
 
@@ -276,6 +331,14 @@ function hideCpuChoicePaper() {
 
 function hideCpuChoiceScissors() {
    document.getElementById('scissorsChoosenIconCpu').style.display = "none";
+}
+
+function hideCpuChoiceSpoc() {
+   document.getElementById('spocChoosenIconCpu').style.display = "none";
+}
+
+function hideCpuChoiceLizard() {
+   document.getElementById('lizardChoosenIconCpu').style.display = "none";
 }
 
 
