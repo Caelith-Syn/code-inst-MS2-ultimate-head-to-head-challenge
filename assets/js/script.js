@@ -17,7 +17,7 @@ function startTimer() {
 	clearInterval(downloadTimer);
 	document.getElementById("countdown-timer").innerHTML = "Times Up";
 	} else {
-	document.getElementById("countdown-timer").innerHTML = timeleft;
+	document.getElementById("countdown-timer").innerHTML = '0' + ':' + timeleft;
 	}
 	timeleft -= 1;
 	}, 1000);
@@ -35,27 +35,13 @@ function checkAnswer() {
 	// alert('This is working!')
 
 /** This code targets the display element choices * */
-    let playerRock = showPlayerChoiceRock();
-    let playerPaper = showPlayerChoicePaper();
-    let playerScissors = showPlayerChoiceScissors();
-    let cpuRock = showCpuChoiceRock();
-    let cpuPaper = showCpuChoicePaper();
-    let cpuScissors = showCpuChoiceScissors();
-
-
-
-
-
-
-
-
 /** This code creates draw statements * */
     if ('playerRock' === 'cpuRock') {
-      alert("It's a draw.");
-    } else if ('playerPaper') {
-      alert("It's a draw.");
-    } else if ('playerScissors') {
-      alert("It's a draw.");
+      return alert("It's a draw.");
+    } else if ('playerPaper' === 'cpuPaper') {
+      return alert("It's a draw.");
+    } else if ('playerScissors' === 'cpuScissors') {
+      return alert("It's a draw.");
     } 
 
 
@@ -66,15 +52,15 @@ function checkAnswer() {
 
 
 /** This code creates win statements * */
-    else if ('playerRock') {
+    if ('playerRock' === 'cpuRock') {
         incrementPlayerScore ();
-        alert("You win");
+        return alert("You win");
     } else if ('playerScissors') {
         incrementPlayerScore ();
-        alert("You win");
+        return alert("You win");
     } else if ('playerPaper') {
         incrementPlayerScore ();
-        alert("You win");
+        return alert("You win");
     }
 
 
@@ -87,13 +73,13 @@ function checkAnswer() {
 /** This code creates lose statements * */
     else if ('playerScissors') {
         incrementCpuScore ();
-        alert("You win");
+        return alert("You win");
     } else if ('playerPaper') {
         incrementCpuScore ();
-        alert("You win");
+        return alert("You win");
    	} else if ('playerRock') {
         incrementCpuScore ();
-        alert("You win");
+        return alert("You win");
    	} 
 
 
@@ -154,6 +140,7 @@ function cpuSelection() {
     if (cpuChoice === 0) {
     return showCpuChoiceRock();
     } else if (cpuChoice === 1) {
+
    	return showCpuChoicePaper();
     } else if (cpuChoice === 2) {
     return  showCpuChoiceScissors();
@@ -170,58 +157,13 @@ function cpuSelection() {
 
 
 
-/** This code displays the computers selection on the right hand side of the screen * */
-function showCpuChoiceRock() {
-   	document.getElementById('rockChoosenIconCpu').style.display = "block";
-	hideCpuChoicePaper();
-	hideCpuChoiceScissors();
-	hideCpuChoiceSpoc();
-	hideCpuChoiceLizard();
-}
-
-function showCpuChoicePaper() {
-   	document.getElementById('paperChoosenIconCpu').style.display = "block";
-	hideCpuChoiceRock();
-	hideCpuChoiceScissors();
-	hideCpuChoiceSpoc();
-	hideCpuChoiceLizard();
-}
-
-function showCpuChoiceScissors() {
-   	document.getElementById('scissorsChoosenIconCpu').style.display = "block";
-	hideCpuChoiceRock();
-	hideCpuChoicePaper();
-	hideCpuChoiceSpoc();
-	hideCpuChoiceLizard();
-}
-
-function showCpuChoiceSpoc() {
-   	document.getElementById('spocChoosenIconCpu').style.display = "block";
-	hideCpuChoiceRock();
-	hideCpuChoicePaper();
-	hideCpuChoiceScissors();
-	hideCpuChoiceLizard();
-}
-
-function showCpuChoiceLizard() {
-   	document.getElementById('lizardChoosenIconCpu').style.display = "block";
-	hideCpuChoiceRock();
-	hideCpuChoicePaper();
-	hideCpuChoiceScissors();
-	hideCpuChoiceSpoc();
-}
-
-
-
-
-
 /** This code displays the players selection on the left hand side of the screen * */
 function showPlayerChoiceRock() {
    	document.getElementById('rockChoosenIconPlayer').style.display = "block";
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
-	hidePlayerChoiceSpoc();
-	hidePlayerChoiceLizard();
+	// hidePlayerChoiceSpoc();
+	// hidePlayerChoiceLizard();
 	cpuSelection();
 	}
 
@@ -229,8 +171,8 @@ function showPlayerChoicePaper() {
    	document.getElementById('paperChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
-	hidePlayerChoiceSpoc();
-	hidePlayerChoiceLizard();
+	// hidePlayerChoiceSpoc();
+	// hidePlayerChoiceLizard();
 	cpuSelection();
 } 
 
@@ -238,29 +180,74 @@ function showPlayerChoiceScissors() {
    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
-	hidePlayerChoiceSpoc();
-	hidePlayerChoiceLizard();
+	// hidePlayerChoiceSpoc();
+	// hidePlayerChoiceLizard();
 	cpuSelection ();
 }
 
-function showPlayerChoiceSpoc() {
-   	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
-	hidePlayerChoiceRock();
-	hidePlayerChoicePaper();
-	hidePlayerChoiceScissors();
-	hidePlayerChoiceLizard();
-	cpuSelection ();
+// function showPlayerChoiceSpoc() {
+//    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
+// 	hidePlayerChoiceRock();
+// 	hidePlayerChoicePaper();
+// 	hidePlayerChoiceScissors();
+// 	hidePlayerChoiceLizard();
+// 	cpuSelection ();
+// }
+
+// function showPlayerChoiceLizard() {
+//    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
+// 	hidePlayerChoiceRock();
+// 	hidePlayerChoicePaper();
+// 	hidePlayerChoiceScissors();
+// 	hidePlayerChoiceSpoc();
+// 	cpuSelection ();
+// }
+
+
+
+
+
+
+/** This code displays the computers selection on the right hand side of the screen * */
+function showCpuChoiceRock() {
+   	document.getElementById('rockChoosenIconCpu').style.display = "block";
+	hideCpuChoicePaper();
+	hideCpuChoiceScissors();
+	// hideCpuChoiceSpoc();
+	// hideCpuChoiceLizard();
 }
 
-function showPlayerChoiceLizard() {
-   	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
-	hidePlayerChoiceRock();
-	hidePlayerChoicePaper();
-	hidePlayerChoiceScissors();
-	hidePlayerChoiceSpoc();
-	cpuSelection ();
+function showCpuChoicePaper() {
+   	document.getElementById('paperChoosenIconCpu').style.display = "block";
+	hideCpuChoiceRock();
+	hideCpuChoiceScissors();
+	// hideCpuChoiceSpoc();
+	// hideCpuChoiceLizard();
 }
 
+function showCpuChoiceScissors() {
+   	document.getElementById('scissorsChoosenIconCpu').style.display = "block";
+	hideCpuChoiceRock();
+	hideCpuChoicePaper();
+	// hideCpuChoiceSpoc();
+	// hideCpuChoiceLizard();
+}
+
+// function showCpuChoiceSpoc() {
+//    	document.getElementById('spocChoosenIconCpu').style.display = "block";
+// 	hideCpuChoiceRock();
+// 	hideCpuChoicePaper();
+// 	hideCpuChoiceScissors();
+// 	hideCpuChoiceLizard();
+// }
+
+// function showCpuChoiceLizard() {
+//    	document.getElementById('lizardChoosenIconCpu').style.display = "block";
+// 	hideCpuChoiceRock();
+// 	hideCpuChoicePaper();
+// 	hideCpuChoiceScissors();
+// 	hideCpuChoiceSpoc();
+// }
 
 
 
