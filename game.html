@@ -30,9 +30,17 @@
 
 	<div id="begin-image-container">
 		<div id="begin-image-div">
-			<a href="#" onclick="startTimer()"><img id="begin-image" src="assets/images/begin-button-clear.png" alt="a begin game image button"></a>
-			<a href="game.html" onclick="startTimer()"><img id="reset-image" src="assets/images/reset-button-clear.png" alt="a reset game image button"></a>
+			<a href="#" onclick="beginGameButton()"><img id="begin-image" src="assets/images/begin-button-clear.png" alt="a begin game image button"></a>
+			<a href="game.html"><img id="reset-image" src="assets/images/reset-button-clear.png" alt="a reset game image button"></a>
 		</div>
+	</div>
+
+	<div>
+		<h1 class="headings">Scores</h1>
+			<p class="game-scores">Player score: <span id="player-score">0</span> - <span>Computer score: <span id="computer-score">0</span></span></p><br>
+		<!-- <h1 class="headings">Time Remaining</h1> -->
+		<div id="countdown-timer" class="game-scores"></div>
+
 	</div>
 
 	<div id="choosen-icon-wrapper-player">
@@ -83,13 +91,7 @@
 			</div>
 	</div>
 
-	<div>
-		<h1 class="headings">Scores</h1>
-			<p class="game-scores">Player score: <span id="player-score">0</span> - <span>Computer score: <span id="computer-score">0</span></span></p><br>
-		<!-- <h1 class="headings">Time Remaining</h1> -->
-		<div id="countdown-timer" class="game-scores"></div>
 
-	</div>
 
 
 

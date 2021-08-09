@@ -1,4 +1,4 @@
-<!-- ![Keep'n it Welly logo](assets/images/keep-n-it-welly-logo-lan.svg) -->
+![Keep'n it Welly logo](assets/images/keep-n-it-welly-logo-lan.svg)
 
 
 # Purpose of the project

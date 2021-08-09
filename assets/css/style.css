@@ -20,11 +20,11 @@ a {
     font-family: futura, helvetica, sans serif;
 }
 
-button {
+/*button {
 	background-color: green;
 	width: 100px;
 	height: 50px;
-}
+}*/
 
 
 
@@ -179,18 +179,49 @@ button {
 	padding-right: 10%;
 }
 
+#game-choice-image-container {
+	width: 40%;
+	height: 10%;
+	margin-left: 30%;
+	/*margin-top: 2%;*/
+	/*background-color: green;*/
+}
+
+#easy-image-div {
+	width: 49%;
+	margin-left: .5%;
+	/*background-color: blue;*/
+	display: inline-block;
+}
+
+#play-easy-image {
+	width: 100%;
+	/*background-color: green;*/
+}
+
+#hard-image-div {
+	width: 49%;
+	/*background-color: blue;*/
+	display: inline-block;
+}
+
+#play-hard-image {
+	width: 100%;
+	/*background-color: green;*/
+}
+
 #social-media-icon-set {
 	/*background-color: red;*/
 	height: 100%;
-	width: 50%;
-	margin-left: 25%;
+	width: 60%;
+	margin-left: 20%;
 }
 
 .social-icons {
 	height: 50%;
 	float: left;
 	margin-top: 25px;
-	margin-left: 16%;
+	margin-left: 15%;
 }
 
 
@@ -263,11 +294,13 @@ button {
 
 #begin-image {
 	width: 40%;
-	margin-left: 10%;
+	margin-left: 30%;
 }
 
 #reset-image {
 	width: 40%;
+	margin-left: 30%;
+	display: none;
 }
 
 #selections {

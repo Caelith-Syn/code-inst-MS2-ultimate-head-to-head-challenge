@@ -1,33 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-	let buttons = document.getElementsByTagName("button");
-	for (let button of buttons) {
-		button.addEventListener("click", function() {
-			if (this.getAttribute("data-type") === "submit") {
-				checkAnswer();
-			} else {
-				let gameType = this.getAttribute("data-type");
-				runGame(gameType);
-			}
-        });
-    }
-
-    document.getElementById("answer-box").addEventListener("keydown", function(event) {
-    	if (event.key === "Enter") {
-    		checkAnswer();
-    	}
-    });
-
-    runGame("addition");
-});
-
-
-
-
-
-
-
-
-function loadGame (gameType) {
+function beginGameButton () {
+	hideBeginButton();
+	showResetButton();
+	startTimer();
 }
 
 
@@ -35,11 +9,9 @@ function loadGame (gameType) {
 
 
 
-
-
-/** This code begins the countdown timer when "Play" is clicked * */
+/** This code begins the countdown timer when "Begin" is clicked * */
 function startTimer() {
-	var timeleft = 60;
+	var timeleft = 59;
 	var downloadTimer = setInterval(function(){
 	if(timeleft <= 0){
 	clearInterval(downloadTimer);
@@ -307,15 +279,15 @@ function hidePlayerChoiceScissors() {
    document.getElementById('scissorsChoosenIconPlayer').style.display = "none";
 }
 
-function hidePlayerChoiceSpoc() {
-   document.getElementById('spocChoosenIconPlayer').style.display = "none";
-}
+// function hidePlayerChoiceSpoc() {
+//    document.getElementById('spocChoosenIconPlayer').style.display = "none";
+// }
 
-function hidePlayerChoiceLizard() {
-   document.getElementById('lizardChoosenIconPlayer').style.display = "none";
-}
+// function hidePlayerChoiceLizard() {
+//    document.getElementById('lizardChoosenIconPlayer').style.display = "none";
+// }
 
-
+ 
 
 
 
@@ -333,13 +305,24 @@ function hideCpuChoiceScissors() {
    document.getElementById('scissorsChoosenIconCpu').style.display = "none";
 }
 
-function hideCpuChoiceSpoc() {
-   document.getElementById('spocChoosenIconCpu').style.display = "none";
+// function hideCpuChoiceSpoc() {
+//    document.getElementById('spocChoosenIconCpu').style.display = "none";
+// }
+
+// function hideCpuChoiceLizard() {
+//    document.getElementById('lizardChoosenIconCpu').style.display = "none";
+// }
+
+function hideBeginButton() {
+   document.getElementById('begin-image').style.display = "none";
 }
 
-function hideCpuChoiceLizard() {
-   document.getElementById('lizardChoosenIconCpu').style.display = "none";
+function showResetButton() {
+   	document.getElementById('reset-image').style.display = "block";
 }
+
+
+
 
 
 
