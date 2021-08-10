@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -160,14 +163,6 @@ a {
 #home-instructions {
 	padding-left: 10%;
 	padding-right: 10%;
-}
-
-#game-choice-image-container {
-	width: 40%;
-	height: 10%;
-	margin-left: 30%;
-	/*margin-top: 2%;*/
-	/*background-color: green;*/
 }
 
 #social-media-icon-set {
@@ -423,5 +418,350 @@ footer {
 	font-size: 150%;
 	margin-left: 25px;
 	margin-top: 35px;
+}*/*/
+
+
+
+
+
+
+
+
+
+
+
+/* ----- Responsive Small Screen Styles ----- */
+
+@media screen and (max-width: 570px) {
+
+
+
+/* - - - - Index Page - - - - */
+
+#begin-button {
+    background-color: transparent;
+    border: none;
 }
 
+#play-image-container {
+	width: 40%;
+	height: 10%;
+	margin-left: 30%;
+	margin-top: 2%;
+	/*background-color: green;*/
+}
+
+#play-image-div {
+	width: 50%;
+	margin-left: 25%;
+	/*background-color: blue;*/
+	display: inline-block;
+}
+
+#play-image {
+	width: 100%;
+	/*background-color: green;*/
+}
+
+.rock-icon {
+	width: 15%;
+	margin-left: 27%;
+	/*background-color: blue;*/
+	display: inline-block;
+	position: relative;
+}
+
+.paper-icon {
+	/*height: 190px;*/
+	width: 15%;
+	/*background-color: yellow;*/
+	display: inline-block;
+}
+
+.scissors-icon {
+	width: 15%;
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+.headings {
+	/*background-color: green;*/
+	color: yellow;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.game-page-heading {
+	/*background-color: green;*/
+	color: yellow;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.game-instructions {
+	/*background-color: blue;*/
+	text-align: center;
+	font-size: 125%;
+}
+
+#home-instructions {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#social-media-icon-set {
+	/*background-color: red;*/
+	height: 100%;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.social-icons {
+	height: 50%;
+	float: left;
+	margin-top: 25px;
+	margin-left: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - Game Rules Page - - - - */
+
+
+#game-rules-instructions {
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-top: 10%;
+	margin-bottom: 2.5%;
+}
+
+.bold-rock-text {
+	color: yellow;
+}
+
+.bold-paper-text {
+	color: cyan;
+}
+
+.bold-scissors-text {
+	color: deeppink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - Game Page - - - - */
+
+#begin-image-container {
+	width: 50%;
+	height: 10%;
+	margin-left: 25%;
+	margin-top: 2%;
+	/*background-color: green;*/
+}
+
+#begin-image-div {
+	width: 100%;
+	height: 10%;
+	/*margin-left: 25%;*/
+	/*background-color: blue;*/
+	display: inline-block;
+}
+
+#begin-image {
+	width: 40%;
+	margin-left: 30%;
+}
+
+#reset-image {
+	width: 40%;
+	margin-left: 30%;
+	display: none;
+}
+
+#selections {
+	/*background-color: yellow;*/
+	width: 40%;
+	display: inline-block;
+}
+
+#rock-image-div {
+	width: 40%;
+	/*background-color: blue;*/
+	display: inline-block;
+	margin-left: 8.5%;
+}
+
+#rock-image {
+	width: 100%;
+	/*background-color: green;*/
+}
+
+#paper-image-div {
+	width: 42%;
+	/*background-color: blue;*/
+	display: inline-block;
+}
+
+#paper-image {
+	width: 100%;
+	/*background-color: green;*/
+}
+
+#scissors-image-div {
+	width: 57%;
+	/*background-color: blue;*/
+	display: inline-block;
+	margin-left: 21.5%;
+}
+
+#scissors-image {
+	width: 100%;
+	/*background-color: green;*/
+}
+
+.score-content {
+	background-color: green;
+	color: yellow;
+	text-align: center;
+	font-size: 200%;
+	padding: 5%;
+}
+
+#player-score {
+	color: yellow;
+}
+
+#computer-score {
+	color: yellow;
+}
+
+.game-scores {
+	/*background-color: blue;*/
+	text-align: center;
+	font-size: 200%;
+}
+
+.score-timer {
+	/*background-color: green;*/
+	color: yellow;
+	text-align: center;
+	font-size: 200%;
+}
+
+#choosen-icon-wrapper-player {
+	/*background-color: purple;*/
+	display: inline-block;
+	width: 20%;
+	margin-left: 10%;
+}
+
+#choosen-icon-wrapper-cpu {
+	/*background-color: purple;*/
+	display: inline-block;
+	width: 20%;
+}
+
+.rock-choosen-icon-player {
+	width: 75%;
+	margin-left: 25%;
+	display: inline-block;
+	float: left;
+	display: none;
+}
+
+.paper-choosen-icon-player {
+	width: 75%;
+	margin-left: 25%;
+	display: inline-block;
+	float: left;
+	display: none;
+}
+
+.scissors-choosen-icon-player {
+	width: 75%;
+	margin-left: 25%;
+	display: inline-block;
+	float: left;
+	display: none;
+}
+
+.rock-choosen-icon-cpu {
+	width: 75%;
+	margin-right: 25%;
+	display: inline-block;
+	float: left;
+	display: none;
+}
+
+.paper-choosen-icon-cpu {
+	width: 75%;
+	margin-right: 25%;
+	display: inline-block;
+	float: left;
+	display: none;
+}
+
+.scissors-choosen-icon-cpu {
+	width: 75%;
+	margin-right: 25%;
+	display: inline-block;
+	float: left;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - Footer Section - - - - */
+
+footer {
+	background-color: green;
+	border-top: 1px solid white;
+	margin-bottom: 0;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+    bottom: 0;
+}
+
+.footer-links {
+	display: inline-block;
+	float: left;
+	color: yellow;
+	font-size: 150%;
+	margin-left: 25px;
+	margin-top: 35px;
+}
+
+}
