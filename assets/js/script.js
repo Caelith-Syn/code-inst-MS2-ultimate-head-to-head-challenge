@@ -32,17 +32,19 @@ function startTimer() {
 
 function checkAnswer() {
 	
+}
+	
 	// alert('This is working!')
 
 /** This code targets the display element choices * */
 /** This code creates draw statements * */
-    if ('playerRock' === 'cpuRock') {
-      return alert("It's a draw.");
-    } else if ('playerPaper' === 'cpuPaper') {
-      return alert("It's a draw.");
-    } else if ('playerScissors' === 'cpuScissors') {
-      return alert("It's a draw.");
-    } 
+//     if ('playerRock' === 'cpuRock') {
+//       return alert("It's a draw.");
+//     } else if ('playerPaper' === 'cpuPaper') {
+//       return alert("It's a draw.");
+//     } else if ('playerScissors' === 'cpuScissors') {
+//       return alert("It's a draw.");
+//     } 
 
 
 
@@ -51,17 +53,17 @@ function checkAnswer() {
 
 
 
-/** This code creates win statements * */
-    if ('playerRock' === 'cpuRock') {
-        incrementPlayerScore ();
-        return alert("You win");
-    } else if ('playerScissors') {
-        incrementPlayerScore ();
-        return alert("You win");
-    } else if ('playerPaper') {
-        incrementPlayerScore ();
-        return alert("You win");
-    }
+// /** This code creates win statements * */
+//     if ('playerRock' === 'cpuRock') {
+//         incrementPlayerScore ();
+//         return alert("You win");
+//     } else if ('playerScissors') {
+//         incrementPlayerScore ();
+//         return alert("You win");
+//     } else if ('playerPaper') {
+//         incrementPlayerScore ();
+//         return alert("You win");
+//     }
 
 
 
@@ -70,17 +72,17 @@ function checkAnswer() {
 
 
 
-/** This code creates lose statements * */
-    else if ('playerScissors') {
-        incrementCpuScore ();
-        return alert("You win");
-    } else if ('playerPaper') {
-        incrementCpuScore ();
-        return alert("You win");
-   	} else if ('playerRock') {
-        incrementCpuScore ();
-        return alert("You win");
-   	} 
+// /** This code creates lose statements * */
+//     else if ('playerScissors') {
+//         incrementCpuScore ();
+//         return alert("You win");
+//     } else if ('playerPaper') {
+//         incrementCpuScore ();
+//         return alert("You win");
+//    	} else if ('playerRock') {
+//         incrementCpuScore ();
+//         return alert("You win");
+//    	} 
 
 
 
@@ -89,12 +91,12 @@ function checkAnswer() {
 
 
 
-/** This code creates a warning message if something dose not work * */
-   	else {
-        alert(`Something is broken`);
-    }
+// /** This code creates a warning message if something dose not work * */
+//    	else {
+//         alert(`Something is broken`);
+//     }
 
-}
+
 
 
 
@@ -138,16 +140,14 @@ function incrementCpuScore () {
 function cpuSelection() {
     let cpuChoice = Math.floor(Math.random()*6);
     if (cpuChoice === 0) {
-    return showCpuChoiceRock();
+
+     showCpuChoiceRock();
     } else if (cpuChoice === 1) {
 
    	return showCpuChoicePaper();
     } else if (cpuChoice === 2) {
-    return  showCpuChoiceScissors();
-    } else if (cpuChoice === 3) {
-    return  showCpuChoiceSpoc();
-    } else if (cpuChoice === 4) {
-    return  showCpuChoiceLizard();
+
+      showCpuChoiceScissors();
     } else {
     return "Make a selection to begin the game";
     }
@@ -162,8 +162,6 @@ function showPlayerChoiceRock() {
    	document.getElementById('rockChoosenIconPlayer').style.display = "block";
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
-	// hidePlayerChoiceSpoc();
-	// hidePlayerChoiceLizard();
 	cpuSelection();
 	}
 
@@ -171,8 +169,6 @@ function showPlayerChoicePaper() {
    	document.getElementById('paperChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
-	// hidePlayerChoiceSpoc();
-	// hidePlayerChoiceLizard();
 	cpuSelection();
 } 
 
@@ -180,28 +176,8 @@ function showPlayerChoiceScissors() {
    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
-	// hidePlayerChoiceSpoc();
-	// hidePlayerChoiceLizard();
 	cpuSelection ();
 }
-
-// function showPlayerChoiceSpoc() {
-//    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
-// 	hidePlayerChoiceRock();
-// 	hidePlayerChoicePaper();
-// 	hidePlayerChoiceScissors();
-// 	hidePlayerChoiceLizard();
-// 	cpuSelection ();
-// }
-
-// function showPlayerChoiceLizard() {
-//    	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
-// 	hidePlayerChoiceRock();
-// 	hidePlayerChoicePaper();
-// 	hidePlayerChoiceScissors();
-// 	hidePlayerChoiceSpoc();
-// 	cpuSelection ();
-// }
 
 
 
@@ -213,41 +189,19 @@ function showCpuChoiceRock() {
    	document.getElementById('rockChoosenIconCpu').style.display = "block";
 	hideCpuChoicePaper();
 	hideCpuChoiceScissors();
-	// hideCpuChoiceSpoc();
-	// hideCpuChoiceLizard();
 }
 
 function showCpuChoicePaper() {
    	document.getElementById('paperChoosenIconCpu').style.display = "block";
 	hideCpuChoiceRock();
 	hideCpuChoiceScissors();
-	// hideCpuChoiceSpoc();
-	// hideCpuChoiceLizard();
 }
 
 function showCpuChoiceScissors() {
    	document.getElementById('scissorsChoosenIconCpu').style.display = "block";
 	hideCpuChoiceRock();
 	hideCpuChoicePaper();
-	// hideCpuChoiceSpoc();
-	// hideCpuChoiceLizard();
 }
-
-// function showCpuChoiceSpoc() {
-//    	document.getElementById('spocChoosenIconCpu').style.display = "block";
-// 	hideCpuChoiceRock();
-// 	hideCpuChoicePaper();
-// 	hideCpuChoiceScissors();
-// 	hideCpuChoiceLizard();
-// }
-
-// function showCpuChoiceLizard() {
-//    	document.getElementById('lizardChoosenIconCpu').style.display = "block";
-// 	hideCpuChoiceRock();
-// 	hideCpuChoicePaper();
-// 	hideCpuChoiceScissors();
-// 	hideCpuChoiceSpoc();
-// }
 
 
 
@@ -265,14 +219,6 @@ function hidePlayerChoicePaper() {
 function hidePlayerChoiceScissors() {
    document.getElementById('scissorsChoosenIconPlayer').style.display = "none";
 }
-
-// function hidePlayerChoiceSpoc() {
-//    document.getElementById('spocChoosenIconPlayer').style.display = "none";
-// }
-
-// function hidePlayerChoiceLizard() {
-//    document.getElementById('lizardChoosenIconPlayer').style.display = "none";
-// }
 
  
 
@@ -292,13 +238,10 @@ function hideCpuChoiceScissors() {
    document.getElementById('scissorsChoosenIconCpu').style.display = "none";
 }
 
-// function hideCpuChoiceSpoc() {
-//    document.getElementById('spocChoosenIconCpu').style.display = "none";
-// }
+ 
 
-// function hideCpuChoiceLizard() {
-//    document.getElementById('lizardChoosenIconCpu').style.display = "none";
-// }
+
+
 
 function hideBeginButton() {
    document.getElementById('begin-image').style.display = "none";
