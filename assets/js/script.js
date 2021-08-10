@@ -28,126 +28,23 @@ function startTimer() {
 
 
 
-
-
-function checkAnswer() {
-	
-}
-	
-	// alert('This is working!')
-
-/** This code targets the display element choices * */
-/** This code creates draw statements * */
-//     if ('playerRock' === 'cpuRock') {
-//       return alert("It's a draw.");
-//     } else if ('playerPaper' === 'cpuPaper') {
-//       return alert("It's a draw.");
-//     } else if ('playerScissors' === 'cpuScissors') {
-//       return alert("It's a draw.");
-//     } 
-
-
-
-
-
-
-
-
-// /** This code creates win statements * */
-//     if ('playerRock' === 'cpuRock') {
-//         incrementPlayerScore ();
-//         return alert("You win");
-//     } else if ('playerScissors') {
-//         incrementPlayerScore ();
-//         return alert("You win");
-//     } else if ('playerPaper') {
-//         incrementPlayerScore ();
-//         return alert("You win");
-//     }
-
-
-
-
-
-
-
-
-// /** This code creates lose statements * */
-//     else if ('playerScissors') {
-//         incrementCpuScore ();
-//         return alert("You win");
-//     } else if ('playerPaper') {
-//         incrementCpuScore ();
-//         return alert("You win");
-//    	} else if ('playerRock') {
-//         incrementCpuScore ();
-//         return alert("You win");
-//    	} 
-
-
-
-
-
-
-
-
-// /** This code creates a warning message if something dose not work * */
-//    	else {
-//         alert(`Something is broken`);
-//     }
-
-
-
-
-
-
-
-
-
-
-// function checkResult() {
-// 	alert('This is working!')
-// }
-
-
-
-
-
-
-
-
-function incrementPlayerScore () {
-
-/** This code will add 1 point to the players score each time the player wins a round * */
-	let playerOldScore = parseInt(document.getElementById('player-score').innerText);
-	document.getElementById('player-score').innerText = ++playerOldScore;
-
-}
-
-function incrementCpuScore () {
-
-/** This code will add 1 point to the computers score each time the computer wins a round * */
-	let cpuOldScore = parseInt(document.getElementById('computer-score').innerText);
-	document.getElementById('computer-score').innerText = ++cpuOldScore;
-
-}
-
-
-
-
-
 /** This code generates a random selcetion for the computer to display * */
 function cpuSelection() {
-    let cpuChoice = Math.floor(Math.random()*6);
+
+    let cpuChoice = Math.floor(Math.random()*3); 
+
     if (cpuChoice === 0) {
-
-     showCpuChoiceRock();
+    	// alert('This is working!');
+    	showCpuChoiceRock();
+    	// return 'cpuRock';
     } else if (cpuChoice === 1) {
-
-   	return showCpuChoicePaper();
+    	// alert('This is also working!');
+    	showCpuChoicePaper();
+    	// return 'cpuPaper';
     } else if (cpuChoice === 2) {
-
-      showCpuChoiceScissors();
+    	// alert('This is working too!');
+    	showCpuChoiceScissors();
+    	// return 'cpuScissors';
     } else {
     return "Make a selection to begin the game";
     }
@@ -157,26 +54,102 @@ function cpuSelection() {
 
 
 
+
+function checkAnswer(){
+
+// let playerRock = showPlayerChoiceRock();{
+//     	return 'playerRockChoice';
+// }}
+
+// function playerSelectionPaper() {
+
+// let playerPaper = showPlayerChoicePaper();{
+//     	return 'playerPaperChoice';
+// }}
+
+// function playerSelectionScissors() {
+
+// let playerScissors = showPlayerChoiceScissors();{
+//     	return 'playerScissorsChoice';
+// }}
+
+// function cpuSelectionRock() {
+
+// let cpuRock = cpuChoice[0];{
+//     	return 'cpuRockChoice';
+// }}
+
+// function cpuSelectionPaper() {
+
+// let cpuPaper = cpuChoice[1];{
+//     	return 'cpuPaperChoice';
+// }}
+
+// function cpuSelectionScissors() {
+
+// let cpuScissors = cpuChoice[2];{
+//     	return 'cpuScissorsChoice';
+// }
+
+if (playerRockChoice === cpuRockChoice) {
+	alert('This is finally working . . . !');
+	} else {
+		alert('This is broken!');
+	}
+}
+
+
+
+
+
+
+// function incrementPlayerScore () {
+
+// /** This code will add 1 point to the players score each time the player wins a round * */
+// 	let playerOldScore = parseInt(document.getElementById('player-score').innerText);
+// 	document.getElementById('player-score').innerText = ++playerOldScore;
+
+// }
+
+// function incrementCpuScore () {
+
+// /** This code will add 1 point to the computers score each time the computer wins a round * */
+// 	let cpuOldScore = parseInt(document.getElementById('computer-score').innerText);
+// 	document.getElementById('computer-score').innerText = ++cpuOldScore;
+
+// }
+
+
+
+
+
+
 /** This code displays the players selection on the left hand side of the screen * */
-function showPlayerChoiceRock() {
-   	document.getElementById('rockChoosenIconPlayer').style.display = "block";
+function showPlayerChoiceRock(){
+	document.getElementById('rockChoosenIconPlayer').style.display = "block";
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
 	cpuSelection();
+	checkAnswer();
+	// alert('This is working!');
 	}
 
-function showPlayerChoicePaper() {
-   	document.getElementById('paperChoosenIconPlayer').style.display = "block";
+function showPlayerChoicePaper(playerPaper){
+	document.getElementById('paperChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
 	cpuSelection();
+	checkAnswer();
+	// alert('This is also working!');
 } 
 
-function showPlayerChoiceScissors() {
-   	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
+function showPlayerChoiceScissors(playerScissors){
+	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
 	cpuSelection ();
+	checkAnswer();
+	// alert('This is also working too!');
 }
 
 
@@ -185,23 +158,24 @@ function showPlayerChoiceScissors() {
 
 
 /** This code displays the computers selection on the right hand side of the screen * */
-function showCpuChoiceRock() {
-   	document.getElementById('rockChoosenIconCpu').style.display = "block";
+function showCpuChoiceRock(cpuRock){
+	document.getElementById('rockChoosenIconCpu').style.display = "block";
 	hideCpuChoicePaper();
 	hideCpuChoiceScissors();
 }
 
-function showCpuChoicePaper() {
-   	document.getElementById('paperChoosenIconCpu').style.display = "block";
+function showCpuChoicePaper(cpuPaper){
+	document.getElementById('paperChoosenIconCpu').style.display = "block";
 	hideCpuChoiceRock();
 	hideCpuChoiceScissors();
 }
 
-function showCpuChoiceScissors() {
-   	document.getElementById('scissorsChoosenIconCpu').style.display = "block";
+function showCpuChoiceScissors(cpuScissors){
+document.getElementById('scissorsChoosenIconCpu').style.display = "block";
 	hideCpuChoiceRock();
 	hideCpuChoicePaper();
 }
+
 
 
 
@@ -220,7 +194,7 @@ function hidePlayerChoiceScissors() {
    document.getElementById('scissorsChoosenIconPlayer').style.display = "none";
 }
 
- 
+
 
 
 
@@ -238,7 +212,7 @@ function hideCpuChoiceScissors() {
    document.getElementById('scissorsChoosenIconCpu').style.display = "none";
 }
 
- 
+
 
 
 
@@ -250,32 +224,3 @@ function hideBeginButton() {
 function showResetButton() {
    	document.getElementById('reset-image').style.display = "block";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
