@@ -129,6 +129,8 @@ function showPlayerChoiceRock(){
 	document.getElementById('rockChoosenIconPlayer').style.display = "block";
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
+	hideBeginButton();
+	showResetButton();
 	cpuSelection();
 	checkAnswer();
 	// alert('This is working!');
@@ -138,6 +140,8 @@ function showPlayerChoicePaper(playerPaper){
 	document.getElementById('paperChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoiceScissors();
+	hideBeginButton();
+	showResetButton();
 	cpuSelection();
 	checkAnswer();
 	// alert('This is also working!');
@@ -147,6 +151,8 @@ function showPlayerChoiceScissors(playerScissors){
 	document.getElementById('scissorsChoosenIconPlayer').style.display = "block";
 	hidePlayerChoiceRock();
 	hidePlayerChoicePaper();
+	hideBeginButton();
+	showResetButton();
 	cpuSelection ();
 	checkAnswer();
 	// alert('This is also working too!');
