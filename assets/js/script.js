@@ -36,15 +36,15 @@ function cpuSelection() {
     if (cpuChoice === 0) {
     	// alert('This is working!');
     	showCpuChoiceRock();
-    	// return 'cpuRock';
+    	return 'rock';
     } else if (cpuChoice === 1) {
     	// alert('This is also working!');
     	showCpuChoicePaper();
-    	// return 'cpuPaper';
+    	return 'paper';
     } else if (cpuChoice === 2) {
     	// alert('This is working too!');
     	showCpuChoiceScissors();
-    	// return 'cpuScissors';
+    	return 'scissors';
     } else {
     return "Make a selection to begin the game";
     }
@@ -55,46 +55,15 @@ function cpuSelection() {
 
 
 
-function checkAnswer(){
-
-// let playerRock = showPlayerChoiceRock();{
-//     	return 'playerRockChoice';
-// }}
-
-// function playerSelectionPaper() {
-
-// let playerPaper = showPlayerChoicePaper();{
-//     	return 'playerPaperChoice';
-// }}
-
-// function playerSelectionScissors() {
-
-// let playerScissors = showPlayerChoiceScissors();{
-//     	return 'playerScissorsChoice';
-// }}
-
-// function cpuSelectionRock() {
-
-// let cpuRock = cpuChoice[0];{
-//     	return 'cpuRockChoice';
-// }}
-
-// function cpuSelectionPaper() {
-
-// let cpuPaper = cpuChoice[1];{
-//     	return 'cpuPaperChoice';
-// }}
-
-// function cpuSelectionScissors() {
-
-// let cpuScissors = cpuChoice[2];{
-//     	return 'cpuScissorsChoice';
-// }
-
-if (playerRockChoice === cpuRockChoice) {
-	alert('This is finally working . . . !');
-	} else {
-		alert('This is broken!');
+function checkAnswer(rock, rock) {
+	if ('rock' === 'rock') {
+alert('Its a tie');
+	} else if ('rock' === 'paper'){
+incrementCpuScore ();
+alert('You lost this round!');		
+	} else if ('rock' === 'scissors'){
+		incrementPlayerScore ();
+		alert('You won this round!');
 	}
 }
 
@@ -103,21 +72,21 @@ if (playerRockChoice === cpuRockChoice) {
 
 
 
-// function incrementPlayerScore () {
+function incrementPlayerScore () {
 
-// /** This code will add 1 point to the players score each time the player wins a round * */
-// 	let playerOldScore = parseInt(document.getElementById('player-score').innerText);
-// 	document.getElementById('player-score').innerText = ++playerOldScore;
+/** This code will add 1 point to the players score each time the player wins a round * */
+	let playerOldScore = parseInt(document.getElementById('player-score').innerText);
+	document.getElementById('player-score').innerText = ++playerOldScore;
 
-// }
+}
 
-// function incrementCpuScore () {
+function incrementCpuScore () {
 
-// /** This code will add 1 point to the computers score each time the computer wins a round * */
-// 	let cpuOldScore = parseInt(document.getElementById('computer-score').innerText);
-// 	document.getElementById('computer-score').innerText = ++cpuOldScore;
+/** This code will add 1 point to the computers score each time the computer wins a round * */
+	let cpuOldScore = parseInt(document.getElementById('computer-score').innerText);
+	document.getElementById('computer-score').innerText = ++cpuOldScore;
 
-// }
+}
 
 
 
@@ -125,14 +94,14 @@ if (playerRockChoice === cpuRockChoice) {
 
 
 /** This code displays the players selection on the left hand side of the screen * */
-function showPlayerChoiceRock(){
+function showPlayerChoiceRock(playerRock){
 	document.getElementById('rockChoosenIconPlayer').style.display = "block";
 	hidePlayerChoicePaper();
 	hidePlayerChoiceScissors();
 	hideBeginButton();
 	showResetButton();
-	cpuSelection();
-	checkAnswer();
+	cpuSel = cpuSelection('rock');
+	checkAnswer('rock');
 	// alert('This is working!');
 	}
 
@@ -142,8 +111,8 @@ function showPlayerChoicePaper(playerPaper){
 	hidePlayerChoiceScissors();
 	hideBeginButton();
 	showResetButton();
-	cpuSelection();
-	checkAnswer();
+	cpuSel = cpuSelection('paper');
+	checkAnswer('paper');
 	// alert('This is also working!');
 } 
 
@@ -153,8 +122,8 @@ function showPlayerChoiceScissors(playerScissors){
 	hidePlayerChoicePaper();
 	hideBeginButton();
 	showResetButton();
-	cpuSelection ();
-	checkAnswer();
+	cpuSel = cpuSelection('scissors');
+	checkAnswer('scissors');
 	// alert('This is also working too!');
 }
 
