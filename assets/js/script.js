@@ -54,13 +54,41 @@ function cpuSelection() {
 
 
 
-
+/** This code player win statements * */
 function checkAnswer(playerSel, cpuSel) {
 	if (playerSel === cpuSel) {
 alert('Its a tie');
-	} else if (playerSel !== cpuSel){
-alert('You lost this round!');		
-	} 
+	} if (playerSel == 'paper'){
+		if(cpuSel == 'rock'){
+			alert('You won this round!');
+			incrementPlayerScore ();
+		}
+	} 	if (playerSel == 'scissors'){
+		if(cpuSel == 'paper'){
+			alert('You won this round!');
+			incrementPlayerScore ();
+		}
+	} 	if (playerSel == 'rock'){
+			if(cpuSel == 'scissors'){
+			alert('You won this round!');
+			incrementPlayerScore ();
+		}
+	}	if (playerSel == 'rock'){
+		if(cpuSel == 'paper'){
+			alert('You lost this round!');
+			incrementCpuScore ();
+		}
+	}	if (playerSel == 'scissors'){
+		if(cpuSel == 'rock'){
+			alert('You lost this round!');
+			incrementCpuScore ();
+		}
+	}	if (playerSel == 'paper'){
+		if(cpuSel == 'scissors'){
+			alert('You lost this round!');
+			incrementCpuScore ();
+	}
+}
 }
 
 
