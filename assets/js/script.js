@@ -55,16 +55,12 @@ function cpuSelection() {
 
 
 
-function checkAnswer(rock, rock) {
-	if ('rock' === 'rock') {
+function checkAnswer(playerSel, cpuSel) {
+	if (playerSel === cpuSel) {
 alert('Its a tie');
-	} else if ('rock' === 'paper'){
-incrementCpuScore ();
+	} else if (playerSel !== cpuSel){
 alert('You lost this round!');		
-	} else if ('rock' === 'scissors'){
-		incrementPlayerScore ();
-		alert('You won this round!');
-	}
+	} 
 }
 
 
@@ -100,8 +96,8 @@ function showPlayerChoiceRock(playerRock){
 	hidePlayerChoiceScissors();
 	hideBeginButton();
 	showResetButton();
-	cpuSel = cpuSelection('rock');
-	checkAnswer('rock');
+	cpuSel = cpuSelection();
+	checkAnswer('rock', cpuSel);
 	// alert('This is working!');
 	}
 
@@ -111,8 +107,8 @@ function showPlayerChoicePaper(playerPaper){
 	hidePlayerChoiceScissors();
 	hideBeginButton();
 	showResetButton();
-	cpuSel = cpuSelection('paper');
-	checkAnswer('paper');
+	cpuSel = cpuSelection();
+	checkAnswer('paper', cpuSel);
 	// alert('This is also working!');
 } 
 
@@ -122,8 +118,8 @@ function showPlayerChoiceScissors(playerScissors){
 	hidePlayerChoicePaper();
 	hideBeginButton();
 	showResetButton();
-	cpuSel = cpuSelection('scissors');
-	checkAnswer('scissors');
+	cpuSel = cpuSelection();
+	checkAnswer('scissors', cpuSel);
 	// alert('This is also working too!');
 }
 
