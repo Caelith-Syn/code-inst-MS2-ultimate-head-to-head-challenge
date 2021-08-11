@@ -34,15 +34,12 @@ function cpuSelection() {
     let cpuChoice = Math.floor(Math.random()*3); 
 
     if (cpuChoice === 0) {
-    	// alert('This is working!');
     	showCpuChoiceRock();
     	return 'rock';
     } else if (cpuChoice === 1) {
-    	// alert('This is also working!');
     	showCpuChoicePaper();
     	return 'paper';
     } else if (cpuChoice === 2) {
-    	// alert('This is working too!');
     	showCpuChoiceScissors();
     	return 'scissors';
     } else {
@@ -54,38 +51,39 @@ function cpuSelection() {
 
 
 
-/** This code player win statements * */
+
+/** This code compares the players input and the computers input and determines a winner * */
 function checkAnswer(playerSel, cpuSel) {
 	if (playerSel === cpuSel) {
-alert('Its a tie');
+alert("It's a tie");
 	} if (playerSel == 'paper'){
 		if(cpuSel == 'rock'){
-			alert('You won this round!');
+			alert('Well done, you won this round!');
 			incrementPlayerScore ();
 		}
 	} 	if (playerSel == 'scissors'){
 		if(cpuSel == 'paper'){
-			alert('You won this round!');
+			alert('Well done, you won this round!');
 			incrementPlayerScore ();
 		}
 	} 	if (playerSel == 'rock'){
 			if(cpuSel == 'scissors'){
-			alert('You won this round!');
+			alert('Well done, you won this round!');
 			incrementPlayerScore ();
 		}
 	}	if (playerSel == 'rock'){
 		if(cpuSel == 'paper'){
-			alert('You lost this round!');
+			alert('Awww, you lost this round!');
 			incrementCpuScore ();
 		}
 	}	if (playerSel == 'scissors'){
 		if(cpuSel == 'rock'){
-			alert('You lost this round!');
+			alert('Awww, you lost this round!');
 			incrementCpuScore ();
 		}
 	}	if (playerSel == 'paper'){
 		if(cpuSel == 'scissors'){
-			alert('You lost this round!');
+			alert('Awww, you lost this round!');
 			incrementCpuScore ();
 	}
 }
@@ -101,7 +99,6 @@ function incrementPlayerScore () {
 /** This code will add 1 point to the players score each time the player wins a round * */
 	let playerOldScore = parseInt(document.getElementById('player-score').innerText);
 	document.getElementById('player-score').innerText = ++playerOldScore;
-
 }
 
 function incrementCpuScore () {
@@ -109,7 +106,6 @@ function incrementCpuScore () {
 /** This code will add 1 point to the computers score each time the computer wins a round * */
 	let cpuOldScore = parseInt(document.getElementById('computer-score').innerText);
 	document.getElementById('computer-score').innerText = ++cpuOldScore;
-
 }
 
 
@@ -126,7 +122,6 @@ function showPlayerChoiceRock(playerRock){
 	showResetButton();
 	cpuSel = cpuSelection();
 	checkAnswer('rock', cpuSel);
-	// alert('This is working!');
 	}
 
 function showPlayerChoicePaper(playerPaper){
@@ -137,7 +132,6 @@ function showPlayerChoicePaper(playerPaper){
 	showResetButton();
 	cpuSel = cpuSelection();
 	checkAnswer('paper', cpuSel);
-	// alert('This is also working!');
 } 
 
 function showPlayerChoiceScissors(playerScissors){
@@ -148,7 +142,6 @@ function showPlayerChoiceScissors(playerScissors){
 	showResetButton();
 	cpuSel = cpuSelection();
 	checkAnswer('scissors', cpuSel);
-	// alert('This is also working too!');
 }
 
 
