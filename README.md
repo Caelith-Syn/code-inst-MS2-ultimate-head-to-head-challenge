@@ -11,7 +11,7 @@ This website was designed with the user experience in mind and is more visual th
 
 ## Navigation Bar
 
-The navigation bar holds the three main sections of the page along with a branded logo to accompany the website. This section is kept quite simple as to allow the user to focus more on the theme of the website without getting overloaded with fancy content.
+The navigation bar holds the three main sections of the page along with a branded logo to accompany the website. This section is kept quite simple as to allow the user to focus more on the theme of the website without getting overloaded with to much text content.
 
 - __Nav Bar__
 
@@ -49,13 +49,13 @@ This page is the only page in the website which is text heavy and is needed so. 
 
 ## Game Page
 
-This page is the main page which the user will interact with. It consists of a begin/reset a brief description on how to start the game and how to increase the level of difficulty to the game, choice selections a timer and a score tracker.
+This page is the main page which the user will interact with. It consists of a begin/reset button a brief description on how to start the game and how to increase the level of difficulty to the game, choice selections a timer and a score tracker.
 
   ![Gallery](assets/images/readme-images/features-game-page.png)
 
 # Future Features
 
-This is a website I am excited to develop further. Some of the features I will be including are:
+This is a website I am very excited to develop further. Some of the features I will be including are:
 
 - On each page I will develop the buttons to actually be more like neon light signs which are attached to the brick wall with fixings and have a light animation like light flickers at times when the user is on a page.
 - On the game page mainly I want to include sound effects like a low humming sound to replicate the lights and have custom button clicks for each action the user makes on the page.
@@ -94,6 +94,7 @@ To address all my feedback I focused on making the site more mobile friendly. I 
 - __Original Placement__
 
   ![Original Home Page Arrangement](assets/images/readme-images/issue-index-page-feedback-icon-size.png)
+  ![Original Game Page Arrangement](assets/images/readme-images/issue-game-page-size-issue.png)
 
 - __New Placement__
 
@@ -103,11 +104,10 @@ To address all my feedback I focused on making the site more mobile friendly. I 
 
 I had used Chrome Dev Tools to check the placement and structure of the HTML elements regularly and make tweaks here and there where needed. In conjunction to Dev Tools I used solid colour background styles to make elements clearer which helped visualise what effects were taking place and what further adjustments I needed to make.
 
-## Validator Testing 
-
-### HTML
+# Validator Testing 
 
 - No errors were found when passing through the official W3C Markup Validation for all the HTML and CSS pages within the website.
+- No errors were found when checking the JavaScript through JSHint.
 
 - __Home Page Validation__
 
@@ -125,7 +125,7 @@ I had used Chrome Dev Tools to check the placement and structure of the HTML ele
 
   ![CSS validator](assets/images/readme-images/css-page-validation.png)
 
-## Deployment
+# Deployment
 
 I used GitHub pages to deploy the project and the steps I done are as follows: 
 
@@ -156,6 +156,6 @@ All the content in this site was adjusted or created using the Adobe suite.
 
     - https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons
 
-## Acknowledgements
+# Acknowledgements
 
 I would like to thank my fellow students, the Code Institute and my mentor Maria Hynes for all the help and guidance to get this far.
