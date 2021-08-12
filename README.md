@@ -17,12 +17,9 @@ The navigation bar holds the three main sections of the page along with a brande
 
   ![Nav Bar](assets/images/readme-images/features-nav-bar.png)
 
-- __Game Page__
-
-
 ## Footer Bar
 
-The footer bar holds social media links which when clicked on will take the user to “Keep’n it Welly” – Facebook, Twitter, YouTube or Instagram pages.
+The footer bar holds social media links which when clicked on will take the user to “Ultimate Head to Head Challenge” – Facebook, Twitter, YouTube or Instagram pages.
 
 The icons were designed by myself using Adobe tool kit.
 
@@ -30,7 +27,6 @@ The icons were designed by myself using Adobe tool kit.
 
   ![Footer and Social Icons](assets/images/readme-images/features-footer.png)
 
- 
 ## Buttons Selectors
 
 The buttons in the webpage are all designed to a keep a consistent theme throughout the site.
@@ -59,10 +55,9 @@ This page is the main page which the user will interact with. It consists of a b
 
 # Future Features
 
-This is a website I am excited to develop further. Some of the features I will be including are sound effects when the page is loaded, buttons are clicked and so on along with developing the button visuals to look more like a neon light bar which is fixed to the brick wall.
+This is a website I am excited to develop further. Some of the features I will be including are:
 
-
-- On each page I would like to develop the buttons to actually be more like neon light signs which are attached to the brick wall with fixings and have a light animation like light flickers at times when the user is on a page.
+- On each page I will develop the buttons to actually be more like neon light signs which are attached to the brick wall with fixings and have a light animation like light flickers at times when the user is on a page.
 - On the game page mainly I want to include sound effects like a low humming sound to replicate the lights and have custom button clicks for each action the user makes on the page.
 - Another feature I would really like to include is options for a choice of different games to choose from which will have their own themes and custom feathers relating to the choice. 
 
@@ -84,9 +79,6 @@ I chose balsamiq to create some wireframes and to knock out some ideas quickly.
 
   ![Functions wireframe](assets/images/readme-images/wireframe-functions.png)
 
-
-
-
 # Testing 
 
 I done some extensive user testing with a few people from different age groups that I could get to show my website to. There was some useful feedback received from doing this and I made some adjustments based on this info.
@@ -100,15 +92,17 @@ The user was left confused after clicking play on the home page to then be promp
 To address all my feedback I focused on making the site more mobile friendly. I created a script function to swap out the begin and reset buttons on the game page and also to change the button visually to indicate that it had been clicked. Also I added an anchor link to a section of the page which allowed the user to see the icons, timer and keep an eye on the scores in the same frame.
 
 - __Original Placement__
+
   ![Original Home Page Arrangement](assets/images/readme-images/issue-index-page-feedback-icon-size.png)
 
 - __New Placement__
+
   ![New Home Page Arrangement](assets/images/readme-images/issue-index-page-size-issue-fix.png)
   ![New Home Page Arrangement](assets/images/readme-images/issue-game-rules-page-size-issue-fix.png)
   ![New Home Page Arrangement](assets/images/readme-images/issue-game-page-size-issue-fix.png)
 
-
 I had used Chrome Dev Tools to check the placement and structure of the HTML elements regularly and make tweaks here and there where needed. In conjunction to Dev Tools I used solid colour background styles to make elements clearer which helped visualise what effects were taking place and what further adjustments I needed to make.
+
 ## Validator Testing 
 
 ### HTML
@@ -116,15 +110,19 @@ I had used Chrome Dev Tools to check the placement and structure of the HTML ele
 - No errors were found when passing through the official W3C Markup Validation for all the HTML and CSS pages within the website.
 
 - __Home Page Validation__
+
   ![W3C HTML validator - Home Page](assets/images/readme-images/index-page-validation.png)
 
 - __Game Rules Page Validation__
+
   ![W3C HTML validator - Things To Do Page](assets/images/readme-images/game-rules-page-validation.png)
 
 - __Game Page Validation__
+
   ![W3C HTML validator - Getting Around Page](assets/images/readme-images/game-page-validation.png)
 
 - __CSS Validation__
+
   ![CSS validator](assets/images/readme-images/css-page-validation.png)
 
 ## Deployment
@@ -138,23 +136,24 @@ I used GitHub pages to deploy the project and the steps I done are as follows:
   - Within the source section I selected the Master Branch from the dop down menu.
   - This then provided me the link. 
 
-The live link can be found here - https://ronan-o-murchu.github.io/keep-n-it-welly/
+The live link can be found here - https://ronan-o-murchu.github.io/ultimate-head-to-head-challenge/
 
 # Credits 
-
-For this website I used many sources for the images and word content. The images were pulled from google images with reference to each one below and the majority of the word content was pulled from Wikipedia as well as others shown below.
 
 ## Code 
 
 - Research on how to fix errors with the code was mainly done through W3Schools and Stack Overflow.
 
 ## Content 
+
 All the content in this site was adjusted or created using the Adobe suite.
 
 - The image for the background:
+
     - https://freephotos.cc/storage/preview/path/QX3BawUjn9ov4EMoDxXcrAzDIvjiKuGP8N8cLqFR.jpeg
 
 - The icons:
+
     - https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons
 
 ## Acknowledgements
