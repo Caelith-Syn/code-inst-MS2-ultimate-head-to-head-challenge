@@ -1,79 +1,92 @@
-![Keep'n it Welly logo](assets/images/keep-n-it-welly-logo-lan.svg)
+Background Image - https://freephotos.cc/en
 
 
+feat: (new feature for the user, not a new feature for build script)
+fix: (bug fix for the user, not a fix to a build script)
+docs: (changes to the documentation)
+style: (formatting, missing semi colons, etc; no production code change)
+refactor: (refactoring production code, eg. renaming a variable)
+test: (adding missing tests, refactoring tests; no production code change)
+chore: (updating grunt tasks etc; no production code change)
+
+
+
+I designed this web page with the intention to further develop the visuals to be fully interactive. Lights flicker on/off and have a slight humming sound in replicate the neon lights.
+
+Icons:
+ <a href="https://www.vecteezy.com/free-vector/rock-paper-scissors-game">Rock Paper Scissors Game Vectors by Vecteezy</a>
+https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons
+
+https://www.vecteezy.com/vector-art/623504-lizard-chameleon-gecko-silhouette-black-vector-black
+ 
+
+![The Ultimate Challenge logo](assets/images/ultimate-challenge-logo.jpg)
+
+![Responsive Design](assets/images/readme-images/responsive-design.png)
 # Purpose of the project
 
-This website is designed for the purpose firstly showcasing what Wellington City has to offer and secondly being a source of some essential information required to achieve a pleasant holiday / long weekend break.
+The purpose of this project website is to be a place where a user can come and briefly get there mind of their busy schedule and play a quick game of rock, paper scissors for fun. It’s design is targeted towards users who have vibrant social lives and can instantly relate the theme to an inviting approach.
+
+This website was designed with the user experience in mind and is more visual than text heavy to allow the user to quickly understand what the purpose of the website is for.
 
 # Features
 
 ## Navigation Bar
 
-The nav menu allows the user to move through the website and also have a visual representation as to which page they are currently on without having to guess. I chose to keep the nav bar color coded with strong colors as it clearly shows the section the user is on against a dark background.
+The navigation bar holds the three main sections of the page along with a branded logo to accompany the website. This section is kept quite simple as to allow the user to focus more on the theme of the website without getting overloaded with fancy content.
 
-The nav bar consists of two variations to accomodate for large and small screen sizes.
+- __Nav Bar__
 
-- __Full Nav Bar__
+  ![Nav Bar](assets/images/readme-images/features-nav-bar.png)
 
-  ![Full Nav Bar](assets/images/readme-images/feature-full-nav-bar.jpg)
+- __Game Page__
 
-- __Compressed Nav Bar__
 
-  ![Compressed Nav Bar](assets/images/readme-images/feature-comp-nav-bar.jpg)
-
-## Footer
+## Footer Bar
 
 The footer bar holds social media links which when clicked on will take the user to “Keep’n it Welly” – Facebook, Twitter, YouTube or Instagram pages.
 
 The icons were designed by myself using Adobe tool kit.
 
-  ![Full Footer and Social Media Links](assets/images/readme-images/feature-social-media-links.jpg)
+- __Social Icons__
 
-## Things To Do Page
+  ![Footer and Social Icons](assets/images/readme-images/features-footer.png)
 
-In this section the user will be presented with some options on what to do in the city and also have additional useful links which will bring them to official sources of the desired activity. Each section is clearly divided to allow the user to focus on the info they are looking for without worrying about overflow info from another section.
+ 
+## Buttons Selectors
 
-  ![Things to do](assets/images/readme-images/feature-things-to-do.png)
+The buttons in the webpage are all designed to a keep a consistent theme throughout the site.
 
-## Getting Around Page
+  ![Page Selectors](assets/images/readme-images/features-icons.png)
 
-This page outlines info on how to navigate the city and displays some of the common transportation needs. Each section has links to external sources which are to help the user with some additional info for official sources. This section is also clearly split to help with keeping the user focused on the section and info the need.
+  ![Page Selectors](assets/images/readme-images/features-icons-2.png)
 
-  ![Getting around](assets/images/readme-images/feature-getting-around.png)
+## Home Page
 
-## Gallery Page
+This home page consists of a play button, a set of icons which catches the users eye instantly and also provides the user with a clear purpose as to what the website is without reading to much descriptions and text.
 
-I have implemented a gallery to showcase what a beautiful city Wellington is and potentially give the user inspiration to come and check out the city and surrounding areas.
+  ![Home Page](assets/images/readme-images/features-home-page.png)
 
-  ![Gallery](assets/images/readme-images/feature-gallery.png)
+## Game Rules Page
 
-## Contact Us Page
+This page is the only page in the website which is text heavy and is needed so. This page is to provide the user with a more detailed explanation on how to play the game if needed.
 
-This page is for the user to provide a message and contact us for any additional requirements that they might have.
+  ![Game Rules Page](assets/images/readme-images/features-game-rules-page.png)
 
-  ![Contact us](assets/images/readme-images/feature-contact-us.jpg)
+## Game Page
+
+This page is the main page which the user will interact with. It consists of a begin/reset a brief description on how to start the game and how to increase the level of difficulty to the game, choice selections a timer and a score tracker.
+
+  ![Gallery](assets/images/readme-images/features-game-page.png)
 
 # Future Features
 
-- I intend to design and implement a compressed version of this nav bar that stills allows the user to have a clear representation as to what section they are on. The version I would like to develop would only display a single badge with the color property for that page while still allowing the user to see the other options which would pull out from the side of the page when hovered on.
+This is a website I am excited to develop further. Some of the features I will be including are sound effects when the page is loaded, buttons are clicked and so on along with developing the button visuals to look more like a neon light bar which is fixed to the brick wall.
 
-- On the “Home” page, I want to include a video display in the background to make the site more visually appealing.
 
-- On the things to do page I would like to include an interactive map which will display areas in the city so that the user will have a visual indication as to the distance between popular destinations.
-
-- I still intend to work and develop this site as I want to create a source for people to find out the necessary info for the city and then ultimately work on a website for tourists for the whole of New Zealand. This will be broken into two main sections of North and South islands and be a source of info and helpful tips for various users.
-
-# Typography and Colour Scheme
-
-The chosen style of the site is a clean display with strong contrast. I chose white on black for the text content as it stands out the most and is easy to read and then 100% strong vibrant colours for the navigation to clearly display where the user is on the website. The colour scheme was inspired from an iconic landmark in Wellington "The Bucket Fountain" which to me represents strong features with colors and display.
-
-- __Font style inspiration:__
-
-  ![Font style inspiration](assets/images/readme-images/inspiration-font.jpg)
-
-- __Colour style inspiration:__
-
-  ![Colour style inspiration](assets/images/readme-images/inspiration-style-colour.jpg)
+- On each page I would like to develop the buttons to actually be more like neon light signs which are attached to the brick wall with fixings and have a light animation like light flickers at times when the user is on a page.
+- On the game page mainly I want to include sound effects like a low humming sound to replicate the lights and have custom button clicks for each action the user makes on the page.
+- Another feature I would really like to include is options for a choice of different games to choose from which will have their own themes and custom feathers relating to the choice. 
 
 # Wireframes
 
@@ -83,50 +96,41 @@ I chose balsamiq to create some wireframes and to knock out some ideas quickly.
 
   ![Home page wireframe](assets/images/readme-images/wireframe-home-page.png)
 
-- __Things To Do:__
+- __Game Page:__
 
-  ![Things to do wireframe](assets/images/readme-images/wireframe-things-to-do.png)
+  ![Game Page Land wireframe](assets/images/readme-images/wireframe-game-page-land.png)
 
-- __Getting Around:__
+  ![Game Page Choose wireframe](assets/images/readme-images/wireframe-game-page-choose.png)
 
-  ![Getting around wireframe](assets/images/readme-images/wireframe-getting-around.png)
+  ![Game Page Choose wireframe](assets/images/readme-images/wireframe-game-page-alert.png)
 
-- __Contact Us:__
+  ![Functions wireframe](assets/images/readme-images/wireframe-functions.png)
 
-  ![Contact us wireframe](assets/images/readme-images/wireframe-contact-us.png)
+
+
 
 # Testing 
 
-After having shown my project to a handful of people I got some valuable feedback which allowed me to redesign some features. The Navgation bar was the biggest concern as 2/3 of my testers indicated that knowing where they were currently was very important.
+I done some extensive user testing with a few people from different age groups that I could get to show my website to. There was some useful feedback received from doing this and I made some adjustments based on this info.
 
-To use the feedback from te users I decided to increase the navigation tab area and make it stick to the top of the header section so that the text is naturally read second after the tab section is identified. The intention and purpose is to have the have the user eye natually trail from left to right and then top to bottom as this is more natural move.
+When I began this process I got my users to test the site on a desktop computer as my testers all worked in an office environment. The general feedback was good but when I moved to testing to mobile screens the response was poor. The feedback I got from just over half of my testers said that the interface was too small for the user to have a positive experience with the game and interest was lost quickly due to frustration on using the site in general.
 
-The biggest issue I had was making the nav bar compatible on smaller screens and after trying and testing some ideas and going back to the drawing board I decided to break it apart and change the placement of it altogether. I ended up creating the DIV to take up 100% width of the nav and header section and adjust the placement of the text with margins to allow for a consistent placement for the five navigation tabs.
+I took this chance to create a more mobile friendly game while still keeping all the features that the testers enjoyed in the desktop test. One of the main issues from the test were:
 
-I used chrome dev tools to test and check all features of this site were working and displaying correctly. I chose two main screens sizes to work with in the beginning and then I started to make adjustments to the code by using the responsive tools in chrome to see how the site displayed in different screen orientations and widths.
+The user was left confused after clicking play on the home page to then be prompted with a “Begin” and “Reset” button to start the game. This made the user believe the game had already begun. Also then the button was clicked the user was unaware that any function had run.
 
-With further development of this I will be able to make and incorporate this look into other areas of the site; for example different colour tags for "things to do"/"getting around" sections.
+To address all my feedback I focused on making the site more mobile friendly. I created a script function to swap out the begin and reset buttons on the game page and also to change the button visually to indicate that it had been clicked. Also I added an anchor link to a section of the page which allowed the user to see the icons, timer and keep an eye on the scores in the same frame.
 
-- __Original Navigantion Placement__
+- __Original Placement__
+  ![Original Home Page Arrangement](assets/images/readme-images/issue-index-page-feedback-icon-size.png)
 
-  ![Home Page iPad](assets/images/readme-images/nav-menu-original.png)
+- __New Placement__
+  ![New Home Page Arrangement](assets/images/readme-images/issue-index-page-size-issue-fix.png)
+  ![New Home Page Arrangement](assets/images/readme-images/issue-game-rules-page-size-issue-fix.png)
+  ![New Home Page Arrangement](assets/images/readme-images/issue-game-page-size-issue-fix.png)
 
-- __Home Page iPad__
 
-  ![Home Page iPad](assets/images/readme-images/responsive-home-ipad.png)
-
-- __Home Page iPhone__
-
-  ![Home Page iPhone](assets/images/readme-images/responsive-home-iphone.png)
-
-- __Things To Do Page iPad__
-
-  ![Things To Do Page iPad](assets/images/readme-images/responsive-things-to-do-ipad.png)
-
-- __Things To Do Page iPhone__
-
-  ![Things To Do Page iPhone](assets/images/readme-images/responsive-things-to-do-iphone.png)
-
+I had used Chrome Dev Tools to check the placement and structure of the HTML elements regularly and make tweaks here and there where needed. In conjunction to Dev Tools I used solid colour background styles to make elements clearer which helped visualise what effects were taking place and what further adjustments I needed to make.
 ## Validator Testing 
 
 ### HTML
@@ -134,22 +138,16 @@ With further development of this I will be able to make and incorporate this loo
 - No errors were found when passing through the official W3C Markup Validation for all the HTML and CSS pages within the website.
 
 - __Home Page Validation__
-  ![W3C HTML validator - Home Page](assets/images/readme-images/validation-html-home-page.png)
+  ![W3C HTML validator - Home Page](assets/images/readme-images/index-page-validation.png)
 
-- __Things To Do Page Validation__
-  ![W3C HTML validator - Things To Do Page](assets/images/readme-images/validation-html-things-to-do-page.png)
+- __Game Rules Page Validation__
+  ![W3C HTML validator - Things To Do Page](assets/images/readme-images/game-rules-page-validation.png)
 
-- __Getting Around Page Validation__
-  ![W3C HTML validator - Getting Around Page](assets/images/readme-images/validation-html-getting-around-page.png)
-
-- __Gallery Page Validation__
-  ![W3C HTML validator - Gallery Page](assets/images/readme-images/validation-html-gallery-page.png)
-
-- __Contact-Us Page Validation__
-  ![W3C HTML validator - Contact Us Page](assets/images/readme-images/validation-html-contact-us-page.png)
+- __Game Page Validation__
+  ![W3C HTML validator - Getting Around Page](assets/images/readme-images/game-page-validation.png)
 
 - __CSS Validation__
-  ![CSS validator](assets/images/readme-images/validation-css.png)
+  ![CSS validator](assets/images/readme-images/css-page-validation.png)
 
 ## Deployment
 
@@ -170,69 +168,17 @@ For this website I used many sources for the images and word content. The images
 
 ## Code 
 
-- The foundation of the gallery section code was from the "Love Running" Code Institute project.
-
-- Research on how to fix minor general errors with the code was mainly done through W3Schools.
+- Research on how to fix errors with the code was mainly done through W3Schools and Stack Overflow.
 
 ## Content 
+All the content in this site was adjusted or created using the Adobe suite.
 
-- The text for the Home page was taken from:
-    - https://www.newzealandnow.govt.nz/choose-new-zealand/regions-cities/wellington
+- The image for the background:
+    - https://freephotos.cc/storage/preview/path/QX3BawUjn9ov4EMoDxXcrAzDIvjiKuGP8N8cLqFR.jpeg
 
-- The text for the Things To Do page was taken from:
-    - https://en.wikipedia.org/wiki/Museum_of_New_Zealand_Te_Papa_Tongarewa
-    - https://en.wikipedia.org/wiki/Wellington_Botanic_Garden
-    - https://en.wikipedia.org/wiki/Escarpment_Track
-    - https://www.wetaworkshop.com/about-us/
-    - https://en.wikipedia.org/wiki/Zealandia_(wildlife_sanctuary)
+- The icons:
+    - https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons
 
-- The text for the Getting Around page was taken from:
-    - https://www.flightcentre.co.nz/wellington/travel-guide/getting-around
-    - https://en.wikipedia.org/wiki/Public_transport_in_the_Wellington_Region
-    - https://en.wikipedia.org/wiki/Public_transport_in_the_Wellington_Region
-    - https://www.nz.kayak.com/New-Zealand-Car-hire.177.crc.html#:~:text=To%20legally%20rent%20a%20car,when%20renting%20in%20New%20Zealand
-    - https://en.wikipedia.org/wiki/Wellington_Airport
+## Acknowledgements
 
-## Media
-
-- The photos used on the Home page is from:
-    - https://images.squarespace-cdn.com/content/v1/5c3bf5b9a9e028aedaf40d87/1555993269542-X97C9V94FHJ2W1ZWNAKE/ke17ZwdGBToddI8pDm48kDDckFQ-QCnd8Bdji_NBlmMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2doULyzW0VOynvl1phfW7aW2h0TkPvSq5eU_FcXRF02duH3bqxw7fF48mhrq5Ulr0Hg/U103-Mount-Victoria-Wellington-Rob-Suisted.jpg?format=1500w
-
-
-- The photos used on the Things To Do page is from:
-    - https://upload.wikimedia.org/wikipedia/commons/b/b2/20170409_Zealandia_013-Pano.jpg
-    - https://www.aucklandnz.com/sites/build_auckland/files/styles/carousel_banner/public/tourismnz/artist_shed_landscape_v1.jpg
-    - https://i.pinimg.com/originals/60/25/95/6025950e63d4f2622ce81d1cf98598ad.jpg
-    - https://www.downunderendeavours.com/wp-content/uploads/2014/08/wine-couple-having-picnic-7456-Mount-Victoria-Wellington-Julian-Apse.jpg
-    - https://wilderness-production.imgix.net/2016/07/Paekakariki-Escarpment.web_.jpg?auto=compress%2Cformat&ixlib=php-1.2.1
-
-
-- The photos used on the Getting Around page is from:
-    - https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_13/2798361/190325-rental-cars-cs-229p-2798361.jpg
-    - https://archipro.co.nz/assets/photos/wellington-airport-carpark-5-2.jpg?raw=1
-    - https://www.railexpress.com.au/wp-content/uploads/2016/03/Metlink-train-in-Wellington-Photo-Creative-Commons-Simons27.jpg
-    - https://resources.stuff.co.nz/content/dam/images/1/q/k/f/p/b/image.related.StuffLandscapeSixteenByNine.1420x800.1qjle8.png/1530232509571.jpg
-
-
-- The photos used on the Gallery page is from:
-    - https://wellingtonzoo.com/assets/Uploads/ShareImage/Wellington-Zoo-Giraffe-Feed-edited.jpg
-    - https://i.pinimg.com/originals/5e/cb/17/5ecb17d84e16a2ba649922a5fc2b9438.jpg
-    - https://main-cdn.grabone.co.nz/goimage/495x343/e0875da6a39bce56aa255513943245b051527058.jpg
-    - https://assets.simpleviewinc.com/simpleview/image/fetch/q_60/https:/assets.simpleviewinc.com/simpleview/image/upload/crm/poconos/Group-Renegade-Wine-Tours-Pocono-Mtns0-503dc1bc04c2ae5_503dc2f5-e99c-9176-5d28b9557244687a.jpg
-    - https://static.wixstatic.com/media/b8622a_424dab9729b240daa615b503952d55f3~mv2.jpg/v1/fill/w_2500,h_1785,al_c/b8622a_424dab9729b240daa615b503952d55f3~mv2.jpg
-    - https://www.wfa.org.nz/assets/Get-involved/fe592d7afb/Get-Involved-Volunteer-Event-Medic.png
-    - https://miro.medium.com/max/1838/1*4OAxboQKGJO7Tn4siMgKbQ.jpeg
-    - https://www.totstoteens.co.nz/wp-content/uploads/2012/12/pexels-yan-krukov-5792901-scaled.jpg
-    - https://cdn.eventfinda.co.nz/uploads/events/transformed/1538808-672239-14.jpg
-    - https://www.wellingtonnz.com/assets/Weta-Workshop_credit-steve-unwin_film-studio-movies-cinema-tour_troll-family-picture-pose-troll-happy-smiling-tourists-visitors-outside-sculpture__FocusFillWzk2MCw1MzYsInkiLDUyXQ.jpg
-    - https://www.wellingtonnz.com/assets/Elements/SingleImages/Expressions_people_artwork_mother_daughter_kids__FillWzEyMDAsNjAwXQ.jpg
-    - https://www.gorentals.co.nz/images/locations/WLG_Explore.jpg
-    - https://www.newzealand.com/assets/Campaigns/FY-20-Campaigns/FY20-Brand-Welcome/GMW-Still-Assets/121-Wellington-City-Graeme-Murray__aWxvdmVrZWxseQo_FocalPointCropWzQyNyw2NDAsNTAsNTAsODUsImpwZyIsNjUsMi41XQ.jpg
-    - https://shiftchangenz.files.wordpress.com/2019/10/timebank_group2.png
-    - https://www.wasabi-solar.co.nz/uploads/1/2/5/9/125967088/img-2363-1_orig.jpg
-    - https://www.parliament.nz/media/5509/2019-interns-at-parliament-2.jpg
-    - https://cdn.britannica.com/02/94802-050-ABBF25E0/Maori-kapa-haka-Wellington-New-Zealand.jpg
-
-
-- The photos used on the Contact Us page is from:
-    - https://trs.co.nz/wp-content/uploads/2018/11/famous-bucket-fountain-cuba-street-wellington-north-island-new-zealand_hl7-1pyaqx_thumbnail-full01.png
+I would like to thank my fellow students, the Code Institute and my mentor Maria Hynes for all the help and guidance to get this far.
