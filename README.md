@@ -1,25 +1,3 @@
-Background Image - https://freephotos.cc/en
-
-
-feat: (new feature for the user, not a new feature for build script)
-fix: (bug fix for the user, not a fix to a build script)
-docs: (changes to the documentation)
-style: (formatting, missing semi colons, etc; no production code change)
-refactor: (refactoring production code, eg. renaming a variable)
-test: (adding missing tests, refactoring tests; no production code change)
-chore: (updating grunt tasks etc; no production code change)
-
-
-
-I designed this web page with the intention to further develop the visuals to be fully interactive. Lights flicker on/off and have a slight humming sound in replicate the neon lights.
-
-Icons:
- <a href="https://www.vecteezy.com/free-vector/rock-paper-scissors-game">Rock Paper Scissors Game Vectors by Vecteezy</a>
-https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons
-
-https://www.vecteezy.com/vector-art/623504-lizard-chameleon-gecko-silhouette-black-vector-black
- 
-
 ![The Ultimate Challenge logo](assets/images/ultimate-challenge-logo.jpg)
 
 ![Responsive Design](assets/images/readme-images/responsive-design.png)
